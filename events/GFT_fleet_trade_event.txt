@@ -2743,14 +2743,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -2805,14 +2805,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -2867,14 +2867,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -2929,14 +2929,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -2991,14 +2991,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -3053,14 +3053,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -3115,14 +3115,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -3177,14 +3177,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -3239,14 +3239,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -3301,14 +3301,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
@@ -3413,14 +3413,14 @@ country_event = {
 			modifier = {
 				factor = 4
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value < -300
 				}
 			}
 			modifier = {
 				factor = 0
 				trust = {
-					who = event_target:ngm_fleet_trade_0
+					who = event_target:gft_fleet_trade_0
 					value > 300
 				}
 			}
