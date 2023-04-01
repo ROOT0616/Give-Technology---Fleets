@@ -48,6 +48,7 @@
  gft_tech_trade.9.m:0 "Engineering tier3"
  gft_tech_trade.9.n:0 "Engineering tier4"
  gft_tech_trade.9.o:0 "Engineering tier5"
+ gft_tech_trade.9.p:0 "Research Transactions Gifts Field Assignment"
 
  gft_tech_trade.10.name:0 "Research Transactions Gifts physics tier1"
  gft_tech_trade.10.desc:0 ""
@@ -442,17 +443,17 @@
  gft_tech_trade.24.h:0 "§Y$tech_ring_world$§!"
  gft_tech_trade.24.i:0 "§Y$tech_mine_living_metal$§!"
 
- gft_tech_trade.25.name:0 "Research Transactions Gifts Acceptances"
- gft_tech_trade.25.desc:0 "§Y[gft_technology_trade_0.GetName]§! has offered to provide the technology. They say that by sharing this technology, we can promote global technological development and international cooperation."
- gft_tech_trade.25.a:0 "I am sorry, but I must decline."
- gft_tech_trade.25.b:0 "We will not take care of other countries."
- gft_tech_trade.25.c:0 "We shall be grateful."
+ gft_tech_trade.1001.name:0 "Research Transactions Gifts Acceptances"
+ gft_tech_trade.1001.desc:0 "§Y[gft_technology_trade_0.GetName]§! has offered to provide the technology. They say that by sharing this technology, we can promote global technological development and international cooperation."
+ gft_tech_trade.1001.a:0 "I am sorry, but I must decline."
+ gft_tech_trade.1001.b:0 "We will not take care of other countries."
+ gft_tech_trade.1001.c:0 "We shall be grateful."
 
- gft_tech_trade.26.name:0 "Research Transactions Gifts acceptance"
- gft_tech_trade.26.desc:0 "Accepted"
+ gft_tech_trade.1002.name:0 "Research Transactions Gifts acceptance"
+ gft_tech_trade.1002.desc:0 "Accepted"
 
- gft_tech_trade.27.name:0 "Research Transactions Gifts refusal"
- gft_tech_trade.27.desc:0 "Rejected."
+ gft_tech_trade.1003.name:0 "Research Transactions Gifts refusal"
+ gft_tech_trade.1003.desc:0 "Rejected."
 
  gft_fleet_trade.1.name:0 "Fleet Gifts Country Selection"
  gft_fleet_trade.1.desc:0 "International cooperation and collaboration requires more than the mutual enhancement of military capabilities. That's right. A fleet deal. Because of procedural issues, the fleet will be designated and sent from us, and we do not know whether the recipient country will accept it or not. It is also not certain whether the other party will pay for it or not. Nevertheless, if you can trust the other party or if the situation is urgent, the transaction will be worthwhile.""

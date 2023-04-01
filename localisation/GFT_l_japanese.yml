@@ -48,6 +48,7 @@
  gft_tech_trade.9.m:0 "工学tier3"
  gft_tech_trade.9.n:0 "工学tier4"
  gft_tech_trade.9.o:0 "工学tier5"
+ gft_tech_trade.9.p:0 "研究取引 贈与 分野振り分けへ"
 
  gft_tech_trade.10.name:0 "研究取引 贈与 物理学tier1"
  gft_tech_trade.10.desc:0 ""
@@ -441,19 +442,19 @@
  gft_tech_trade.24.h:0 "§Y$tech_ring_world$§!"
  gft_tech_trade.24.i:0 "§Y$tech_mine_living_metal$§!"
 
- gft_tech_trade.25.name:0 "研究取引 贈与 受理"
- gft_tech_trade.25.desc:0 "§Y[gft_technology_trade_0.GetName]§!より技術を提供するという申し出があった。この技術を共有することにより世界的な技術発展と国際協調を推し進めることができるというのだ。"
- gft_tech_trade.25.a:0 "残念だが、お断りしよう"
- gft_tech_trade.25.b:0 "他国の世話にはならない"
- gft_tech_trade.25.c:0 "ありがたくいただこう"
+ gft_tech_trade.1001.name:0 "研究取引 贈与 受理"
+ gft_tech_trade.1001.desc:0 "§Y[gft_technology_trade_0.GetName]§!より技術を提供するという申し出があった。この技術を共有することにより世界的な技術発展と国際協調を推し進めることができるというのだ。"
+ gft_tech_trade.1001.a:0 "残念だが、お断りしよう"
+ gft_tech_trade.1001.b:0 "他国の世話にはならない"
+ gft_tech_trade.1001.c:0 "ありがたくいただこう"
 
- gft_tech_trade.26.name:0 "研究取引 贈与 受理"
- gft_tech_trade.26.desc:0 "先日送付した技術提供に関しては快く受け入れられた。このことは国際協調に大きな貢献をするだろう。"
- gft_tech_trade.26.a:0 "素晴らしい"
+ gft_tech_trade.1002.name:0 "研究取引 贈与 受理"
+ gft_tech_trade.1002.desc:0 "先日送付した技術提供に関しては快く受け入れられた。このことは国際協調に大きな貢献をするだろう。"
+ gft_tech_trade.1002.a:0 "素晴らしい"
 
- gft_tech_trade.27.name:0 "研究取引 贈与 拒否"
- gft_tech_trade.27.desc:0 "我が国の好意は受け入れられなかった。国際協調の時代に対して強かな拒絶があるとは想定できなかった。"
- gft_tech_trade.27.a:0 "残念だ"
+ gft_tech_trade.1003.name:0 "研究取引 贈与 拒否"
+ gft_tech_trade.1003.desc:0 "我が国の好意は受け入れられなかった。国際協調の時代に対して強かな拒絶があるとは想定できなかった。"
+ gft_tech_trade.1003.a:0 "残念だ"
 
  gft_fleet_trade.1.name:0 "艦隊 贈与 国選び"
  gft_fleet_trade.1.desc:0 "国際協調と協力を果たすためには、軍事力の相互向上を果たす以外にも必要なことがある。\nそう。§R艦隊の取引§!だ。手続的な問題で艦隊をこちらから指定して送付される形となるので、§Y送付先の国が受け入れるかはこちらからは§!§R分からない§!。また、§Y相手が対価を支払うかどうかも§!§R確定ではない§!。\nそれでも相手を信用できる、もしくは事態が切迫しているならば取引は有意義なものになるだろう。"
