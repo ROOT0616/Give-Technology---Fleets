@@ -20,7 +20,6 @@ def generate_option_name(idx: int) -> str:
 
 def create_output(tech_data: List) -> Dict[str, str]:
     output = {}
-    local_output = ""
     areas = ['physics', 'society', 'engineering']
 
     event_id = 10
@@ -56,9 +55,6 @@ def create_output(tech_data: List) -> Dict[str, str]:
                     f"\t\t\thas_technology = {tech[0]}\n"
                     f"\t\t}}\n"
                     f"\t\thidden_effect = {{\n"
-                )
-                local_output += (
-                    f" gft_tech_trade.{event_id}.a:0 \"§Y$tech_space_science_1$§!\"\n"
                 )
 
                 for i in range(1, 14):
