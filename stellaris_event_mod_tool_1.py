@@ -25,12 +25,12 @@ def is_ignored_option(option):
 
 def create_output(title, desc, options, technologies):
     output = []
-    output.append(f"{title}:0 \"研究取引 贈与 物理学tier1\"")
+    output.append(f" {title}:0 \"研究取引 贈与 物理学tier1\"")
 
     tech_index = 0
     for option in options:
         if not is_ignored_option(option):
-            output.append(f"{option}:0 \"§Y${technologies[tech_index]}$§!\"")
+            output.append(f" {option}:0 \"§Y${technologies[tech_index]}$§!\"")
             tech_index += 1
 
     return "\n".join(output)

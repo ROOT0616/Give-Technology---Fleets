@@ -29,7 +29,8 @@
  gft_tech_trade.8.k:0 "[gft_technology_trade_11.GetName]"
  gft_tech_trade.8.l:0 "[gft_technology_trade_12.GetName]"
  gft_tech_trade.8.m:0 "[gft_technology_trade_13.GetName]"
- gft_tech_trade.8.n:0 "贴近（如书、眼睛、会议等）。"
+ gft_tech_trade.8.n:0 "没有其他州吗？"
+ gft_tech_trade.8.o:0 "贴近（如书、眼睛、会议等）。"
 
  gft_tech_trade.9.name:0 "研究交易 礼物 部门分配"
  gft_tech_trade.9.desc:0 ""
@@ -470,7 +471,8 @@
  gft_fleet_trade.1.k:0 "[gft_fleet_trade_11.GetName]"
  gft_fleet_trade.1.l:0 "[gft_fleet_trade_12.GetName]"
  gft_fleet_trade.1.m:0 "[gft_fleet_trade_13.GetName]"
- gft_fleet_trade.1.n:0 "我还是不想做。"
+ gft_fleet_trade.1.n:0 "没有其他州吗？"
+ gft_fleet_trade.1.o:0 "贴近（如书、眼睛、会议等）。"
 
  gft_fleet_trade.2.name:0 "舰队给予舰队的选择"
  gft_fleet_trade.2.desc:0 "国际合作与协作需要的不仅仅是军事能力的相互增强。这就对了。一个舰队的交易。由于程序问题，舰队将由我们指定和发送，我们不知道接受国是否会接受它。也不确定对方是否会付钱。尽管如此，如果你能信任对方，或者情况紧急，这笔交易将是值得的。"

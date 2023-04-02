@@ -29,7 +29,8 @@
  gft_tech_trade.8.k:0 "[gft_technology_trade_11.GetName]"
  gft_tech_trade.8.l:0 "[gft_technology_trade_12.GetName]"
  gft_tech_trade.8.m:0 "[gft_technology_trade_13.GetName]"
- gft_tech_trade.8.n:0 "close"
+ gft_tech_trade.8.n:0 "Are there no other nations?"
+ gft_tech_trade.8.o:0 "close"
 
  gft_tech_trade.9.name:0 "Research Transactions Gifts Field Assignment"
  gft_tech_trade.9.desc:0 ""
@@ -470,7 +471,8 @@
  gft_fleet_trade.1.k:0 "[gft_fleet_trade_11.GetName]"
  gft_fleet_trade.1.l:0 "[gft_fleet_trade_12.GetName]"
  gft_fleet_trade.1.m:0 "[gft_fleet_trade_13.GetName]"
- gft_fleet_trade.1.n:0 "I still don't want to do it."
+ gft_fleet_trade.1.n:0 "Are there no other nations?"
+ gft_fleet_trade.1.o:0 "close"
 
  gft_fleet_trade.2.name:0 "Fleet Giving Fleet Selection"
  gft_fleet_trade.2.desc:0 "International cooperation and collaboration requires more than the mutual enhancement of military capabilities. That's right. A fleet deal. Because of procedural issues, the fleet will be designated and sent from us, and we do not know whether the recipient country will accept it or not. It is also not certain whether the other party will pay for it or not. Nevertheless, if you can trust the other party or if the situation is urgent, the transaction will be worthwhile."
