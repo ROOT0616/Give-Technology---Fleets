@@ -20,7 +20,7 @@ def extract_event_details(event_content):
     return title, desc, options, technologies
 
 def is_ignored_option(option):
-    ignored_options = ["gft_tech_trade.9.p", "gft_tech_trade.8.n"]
+    ignored_options = ["gft_tech_trade.2.p", "gft_tech_trade.1.n"]
     return option in ignored_options
 
 def create_output(title, desc, options, technologies):

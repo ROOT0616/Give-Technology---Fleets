@@ -12,7 +12,7 @@ gft_technology_trade_options_menu = {
 		# custom_tooltip = ryika_abdw_options_menu_tt
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.8
+				id = gft_tech_trade.1
 			}
 		}
 	}

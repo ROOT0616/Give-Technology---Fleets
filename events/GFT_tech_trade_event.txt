@@ -5,9 +5,9 @@ namespace = gft_tech_trade
 
 # 研究取引 贈与 国選び
 country_event = {
-	id = gft_tech_trade.8
-	title = gft_tech_trade.8.name
-	desc = gft_tech_trade.8.desc
+	id = gft_tech_trade.1
+	title = gft_tech_trade.1.name
+	desc = gft_tech_trade.1.desc
 	picture = GFX_evt_intelligence_report
 	show_sound = event_activating_unknown_technology
 	is_triggered_only = yes
@@ -341,7 +341,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.a
+		name = gft_tech_trade.1.a
 		trigger = {
 			exists = event_target:gft_technology_trade_1
 		}
@@ -353,13 +353,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_1_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.b
+		name = gft_tech_trade.1.b
 		trigger = {
 			exists = event_target:gft_technology_trade_2
 		}
@@ -371,13 +371,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_2_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.c
+		name = gft_tech_trade.1.c
 		trigger = {
 			exists = event_target:gft_technology_trade_3
 		}
@@ -389,13 +389,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_3_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.d
+		name = gft_tech_trade.1.d
 		trigger = {
 			exists = event_target:gft_technology_trade_4
 		}
@@ -407,13 +407,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_4_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.e
+		name = gft_tech_trade.1.e
 		trigger = {
 			exists = event_target:gft_technology_trade_5
 		}
@@ -425,13 +425,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_5_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.f
+		name = gft_tech_trade.1.f
 		trigger = {
 			exists = event_target:gft_technology_trade_6
 		}
@@ -443,13 +443,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_6_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.g
+		name = gft_tech_trade.1.g
 		trigger = {
 			exists = event_target:gft_technology_trade_7
 		}
@@ -461,13 +461,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_7_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.h
+		name = gft_tech_trade.1.h
 		trigger = {
 			exists = event_target:gft_technology_trade_8
 		}
@@ -479,13 +479,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_8_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.i
+		name = gft_tech_trade.1.i
 		trigger = {
 			exists = event_target:gft_technology_trade_9
 		}
@@ -497,13 +497,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_9_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.j
+		name = gft_tech_trade.1.j
 		trigger = {
 			exists = event_target:gft_technology_trade_10
 		}
@@ -515,13 +515,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_10_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.k
+		name = gft_tech_trade.1.k
 		trigger = {
 			exists = event_target:gft_technology_trade_11
 		}
@@ -533,13 +533,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_11_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.l
+		name = gft_tech_trade.1.l
 		trigger = {
 			exists = event_target:gft_technology_trade_12
 		}
@@ -551,13 +551,13 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_12_country_flag
 		}
 	}
 	option = {
-		name = gft_tech_trade.8.m
+		name = gft_tech_trade.1.m
 		trigger = {
 			exists = event_target:gft_technology_trade_13
 		}
@@ -569,17 +569,17 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 			set_country_flag = gft_technology_trade_13_country_flag
 		}
 	}
 	# 国選択リセット
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.8
+				id = gft_tech_trade.1
 			}
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -600,7 +600,7 @@ country_event = {
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.o
+		name = gft_tech_trade.1.o
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -623,15 +623,15 @@ country_event = {
 
 # 研究取引 贈与 分野振り分け
 country_event = {
-	id = gft_tech_trade.9
-	title = gft_tech_trade.9.name
-	desc = gft_tech_trade.9.desc
+	id = gft_tech_trade.2
+	title = gft_tech_trade.2.name
+	desc = gft_tech_trade.2.desc
 	picture = GFX_evt_intelligence_report
 	show_sound = event_activating_unknown_technology
 	is_triggered_only = yes
 	# 物理学tier1
 	option = {
-		name = gft_tech_trade.9.a
+		name = gft_tech_trade.2.a
 		trigger = {
 			can_research_tier = {
 				area = physics
@@ -646,7 +646,7 @@ country_event = {
 	}
 	# 物理学tier2
 	option = {
-		name = gft_tech_trade.9.b
+		name = gft_tech_trade.2.b
 		trigger = {
 			can_research_tier = {
 				area = physics
@@ -661,7 +661,7 @@ country_event = {
 	}
 	# 物理学tier3
 	option = {
-		name = gft_tech_trade.9.c
+		name = gft_tech_trade.2.c
 		trigger = {
 			can_research_tier = {
 				area = physics
@@ -676,7 +676,7 @@ country_event = {
 	}
 	# 物理学tier4
 	option = {
-		name = gft_tech_trade.9.d
+		name = gft_tech_trade.2.d
 		trigger = {
 			can_research_tier = {
 				area = physics
@@ -691,7 +691,7 @@ country_event = {
 	}
 	# 物理学tier5
 	option = {
-		name = gft_tech_trade.9.e
+		name = gft_tech_trade.2.e
 		trigger = {
 			can_research_tier = {
 				area = physics
@@ -706,7 +706,7 @@ country_event = {
 	}
 	# 社会学tier1
 	option = {
-		name = gft_tech_trade.9.f
+		name = gft_tech_trade.2.f
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.15
@@ -715,7 +715,7 @@ country_event = {
 	}
 	# 社会学tier2
 	option = {
-		name = gft_tech_trade.9.g
+		name = gft_tech_trade.2.g
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.16
@@ -724,7 +724,7 @@ country_event = {
 	}
 	# 社会学tier3
 	option = {
-		name = gft_tech_trade.9.h
+		name = gft_tech_trade.2.h
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.17
@@ -733,7 +733,7 @@ country_event = {
 	}
 	# 社会学tier4
 	option = {
-		name = gft_tech_trade.9.i
+		name = gft_tech_trade.2.i
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.18
@@ -742,7 +742,7 @@ country_event = {
 	}
 	# 社会学tier5
 	option = {
-		name = gft_tech_trade.9.j
+		name = gft_tech_trade.2.j
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.19
@@ -751,7 +751,7 @@ country_event = {
 	}
 	# 工学tier1
 	option = {
-		name = gft_tech_trade.9.k
+		name = gft_tech_trade.2.k
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.20
@@ -760,7 +760,7 @@ country_event = {
 	}
 	# 工学tier2
 	option = {
-		name = gft_tech_trade.9.l
+		name = gft_tech_trade.2.l
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.21
@@ -769,7 +769,7 @@ country_event = {
 	}
 	# 工学tier3
 	option = {
-		name = gft_tech_trade.9.m
+		name = gft_tech_trade.2.m
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.22
@@ -778,7 +778,7 @@ country_event = {
 	}
 	# 工学tier4
 	option = {
-		name = gft_tech_trade.9.n
+		name = gft_tech_trade.2.n
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.23
@@ -787,16 +787,25 @@ country_event = {
 	}
 	# 工学tier5
 	option = {
-		name = gft_tech_trade.9.o
+		name = gft_tech_trade.2.o
 		hidden_effect = {
 			country_event = {
 				id = gft_tech_trade.24
 			}
 		}
 	}
+	# # 他の追加用mod
+	# option = {
+	# 	name = gft_tech_trade.2.o
+	# 	hidden_effect = {
+	# 		country_event = {
+	# 			id = gft_tech_trade.3
+	# 		}
+	# 	}
+	# }
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -816,6 +825,263 @@ country_event = {
 		}
 	}
 }
+
+# 研究取引 贈与 他Mod用 分野振り分け 例
+# country_event = {
+# 	id = gft_tech_trade.3
+# 	title = gft_tech_trade.3.name
+# 	desc = gft_tech_trade.3.desc
+# 	picture = GFX_evt_intelligence_report
+# 	show_sound = event_activating_unknown_technology
+# 	is_triggered_only = yes
+# 	# ギガスト物理学tier1
+# 	option = {
+# 		name = gft_tech_trade.2.a
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = physics
+# 				tier = 1
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.25
+# 			}
+# 		}
+# 	}
+# 	# ギガスト物理学tier2
+# 	option = {
+# 		name = gft_tech_trade.2.b
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = physics
+# 				tier = 2
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.26
+# 			}
+# 		}
+# 	}
+# 	# ギガスト物理学tier3
+# 	option = {
+# 		name = gft_tech_trade.2.c
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = physics
+# 				tier = 3
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.12
+# 			}
+# 		}
+# 	}
+# 	# ギガスト物理学tier4
+# 	option = {
+# 		name = gft_tech_trade.2.d
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = physics
+# 				tier = 4
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.13
+# 			}
+# 		}
+# 	}
+# 	# ギガスト物理学tier5
+# 	option = {
+# 		name = gft_tech_trade.2.e
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = physics
+# 				tier = 5
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.14
+# 			}
+# 		}
+# 	}
+# 	# ギガスト社会学tier1
+# 	option = {
+# 		name = gft_tech_trade.2.f
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = society
+# 				tier = 1
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.15
+# 			}
+# 		}
+# 	}
+# 	# ギガスト社会学tier2
+# 	option = {
+# 		name = gft_tech_trade.2.g
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = society
+# 				tier = 2
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.16
+# 			}
+# 		}
+# 	}
+# 	# ギガスト社会学tier3
+# 	option = {
+# 		name = gft_tech_trade.2.h
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = society
+# 				tier = 3
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.17
+# 			}
+# 		}
+# 	}
+# 	# ギガスト社会学tier4
+# 	option = {
+# 		name = gft_tech_trade.2.i
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = society
+# 				tier = 4
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.18
+# 			}
+# 		}
+# 	}
+# 	# ギガスト社会学tier5
+# 	option = {
+# 		name = gft_tech_trade.2.j
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = society
+# 				tier = 5
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.19
+# 			}
+# 		}
+# 	}
+# 	# ギガスト工学tier1
+# 	option = {
+# 		name = gft_tech_trade.2.k
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = engineering
+# 				tier = 1
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.20
+# 			}
+# 		}
+# 	}
+# 	# ギガスト工学tier2
+# 	option = {
+# 		name = gft_tech_trade.2.l
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = engineering
+# 				tier = 2
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.21
+# 			}
+# 		}
+# 	}
+# 	# ギガスト工学tier3
+# 	option = {
+# 		name = gft_tech_trade.2.m
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = engineering
+# 				tier = 3
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.22
+# 			}
+# 		}
+# 	}
+# 	# ギガスト工学tier4
+# 	option = {
+# 		name = gft_tech_trade.2.n
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = engineering
+# 				tier = 4
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.23
+# 			}
+# 		}
+# 	}
+# 	# ギガスト工学tier5
+# 	option = {
+# 		name = gft_tech_trade.2.o
+# 		trigger = {
+# 			can_research_tier = {
+# 				area = engineering
+# 				tier = 5
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = gft_tech_trade.24
+# 			}
+# 		}
+# 	}
+
+# 	# 閉じる
+# 	option = {
+# 		name = gft_tech_trade.1.n
+# 		hidden_effect = {
+# 			remove_global_flag = gft_technology_trade_now_global_flag
+# 			clear_global_event_target = gft_technology_trade_0
+# 			clear_global_event_target = gft_technology_trade_1
+# 			clear_global_event_target = gft_technology_trade_2
+# 			clear_global_event_target = gft_technology_trade_3
+# 			clear_global_event_target = gft_technology_trade_4
+# 			clear_global_event_target = gft_technology_trade_5
+# 			clear_global_event_target = gft_technology_trade_6
+# 			clear_global_event_target = gft_technology_trade_7
+# 			clear_global_event_target = gft_technology_trade_8
+# 			clear_global_event_target = gft_technology_trade_9
+# 			clear_global_event_target = gft_technology_trade_10
+# 			clear_global_event_target = gft_technology_trade_11
+# 			clear_global_event_target = gft_technology_trade_12
+# 			clear_global_event_target = gft_technology_trade_13
+# 		}
+# 	}
+# }
 
 # physics
 country_event = {
@@ -3853,16 +4119,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -9587,16 +9853,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -13007,16 +13273,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -17139,16 +17405,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -19313,16 +19579,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -22735,16 +23001,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -29715,16 +29981,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -35627,16 +35893,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -38335,16 +38601,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -41043,16 +41309,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -44821,16 +45087,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -51267,16 +51533,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -55399,16 +55665,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -59709,16 +59975,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
@@ -62417,16 +62683,16 @@ country_event = {
 	}
 	# 戻る
 	option = {
-		name = gft_tech_trade.9.p
+		name = gft_tech_trade.2.p
 		hidden_effect = {
 			country_event = {
-				id = gft_tech_trade.9
+				id = gft_tech_trade.2
 			}
 		}
 	}
 	# 閉じる
 	option = {
-		name = gft_tech_trade.8.n
+		name = gft_tech_trade.1.n
 		hidden_effect = {
 			remove_global_flag = gft_technology_trade_now_global_flag
 			clear_global_event_target = gft_technology_trade_0
