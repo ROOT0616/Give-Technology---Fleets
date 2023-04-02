@@ -26,7 +26,7 @@ def create_output(tech_data: List) -> Dict[str, str]:
     for area in areas:
         area_output = ""
 
-        techs_in_area = list(filter(lambda x: x[1] == area, tech_data))
+        techs_in_area = sorted(list(filter(lambda x: x[1] == area, tech_data)), key=lambda x: x[0])
         tiers_in_area = sorted(list(set([tech[2] for tech in techs_in_area])))
 
         for tier in tiers_in_area:
@@ -37,13 +37,13 @@ def create_output(tech_data: List) -> Dict[str, str]:
                 f"country_event = {{\n"
                 f"\tid = gft_tech_trade.{event_id}\n"
                 f"\ttitle = gft_tech_trade.{event_id}.name\n"
-                f"\tdesc = gft_tech_trade.{event_id}.desc\n"
+                f"\tdesc = gft_tech_trade.10.desc\n"
                 "\tpicture = GFX_evt_intelligence_report\n"
                 "\tshow_sound = event_activating_unknown_technology\n"
                 "\tis_triggered_only = yes\n"
             )
 
-            techs_in_tier = list(filter(lambda x: x[2] == tier, techs_in_area))
+            techs_in_tier = sorted(list(filter(lambda x: x[2] == tier, techs_in_area)), key=lambda x: x[0])
 
             for idx, tech in enumerate(techs_in_tier):
                 option_name = generate_option_name(idx)
@@ -119,16 +119,14 @@ def create_output(tech_data: List) -> Dict[str, str]:
         output[area] = area_output
     return output
 
-
 def main():
     file_path = "./output.xlsx"
     tech_data = read_excel(file_path)
     area_outputs = create_output(tech_data)
 
-    with open("output.txt", "w", encoding="utf-8") as output_file:
+    with open("GFT_tech_trade_event_1.txt", "w", encoding="utf-8") as output_file:
         for area in area_outputs:
             output_file.write(f"# {area}\n{area_outputs[area]}\n")
-
 
 if __name__ == "__main__":
     main()
