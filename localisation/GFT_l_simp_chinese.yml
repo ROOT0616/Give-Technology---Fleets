@@ -49,7 +49,7 @@
  gft_tech_trade.2.m:0 "工学tier3"
  gft_tech_trade.2.n:0 "工学tier4"
  gft_tech_trade.2.o:0 "工学tier5"
- gft_tech_trade.2.p:0 "研究交易 礼物 部门分配"
+ gft_tech_trade.2.zz:0 "研究交易 礼物 部门分配"
 
  gft_tech_trade.10.name:0 "研究交易 礼物 物理学tier2"
  gft_tech_trade.10.desc:0 ""

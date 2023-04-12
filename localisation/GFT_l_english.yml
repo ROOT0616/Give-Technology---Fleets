@@ -49,7 +49,7 @@
  gft_tech_trade.2.m:0 "Engineering tier3"
  gft_tech_trade.2.n:0 "Engineering tier4"
  gft_tech_trade.2.o:0 "Engineering tier5"
- gft_tech_trade.2.p:0 "Research Transactions Gifts Field Assignment"
+ gft_tech_trade.2.zz:0 "Research Transactions Gifts Field Assignment"
 
  gft_tech_trade.10.name:0 "Research Transactions Gifts physics tier1"
  gft_tech_trade.10.desc:0 ""
