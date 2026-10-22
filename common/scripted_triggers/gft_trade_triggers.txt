@@ -1,0 +1,5104 @@
+# Country scope: ROOT = giver, FROM = receiver, per tradable_actions/00_README.txt.
+gft_trade_partners_valid = {
+ is_country_type = default
+ exists = FROM
+ FROM = {
+  is_country_type = default
+  NOT = { is_same_value = ROOT }
+ }
+ has_communications = FROM
+ NOT = { is_at_war_with = FROM }
+}
+
+gft_trade_can_give_tech_adaptive_bureaucracy = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_adaptive_bureaucracy
+ FROM = {
+  NOT = { has_technology = tech_adaptive_bureaucracy }
+  has_technology = tech_planetary_unification
+
+ }
+}
+
+gft_trade_can_give_tech_adaptive_combat_algorithms = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_adaptive_combat_algorithms
+ FROM = {
+  NOT = { has_technology = tech_adaptive_combat_algorithms }
+
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_administrative_ai = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_administrative_ai
+ FROM = {
+  NOT = { has_technology = tech_administrative_ai }
+  has_technology = tech_basic_science_lab_1
+
+ }
+}
+
+gft_trade_can_give_tech_advanced_industrial_storm_protection = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_advanced_industrial_storm_protection
+ FROM = {
+  NOT = { has_technology = tech_advanced_industrial_storm_protection }
+  has_technology = tech_industrial_storm_protection
+  has_cosmic_storms_dlc = yes
+is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_advanced_metallurgy_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_advanced_metallurgy_1
+ FROM = {
+  NOT = { has_technology = tech_advanced_metallurgy_1 }
+  has_technology = tech_alloys_1
+has_technology = tech_ship_armor_2
+
+ }
+}
+
+gft_trade_can_give_tech_advanced_metallurgy_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_advanced_metallurgy_2
+ FROM = {
+  NOT = { has_technology = tech_advanced_metallurgy_2 }
+  has_technology = tech_advanced_metallurgy_1
+has_technology = tech_alloys_2
+has_technology = tech_ship_armor_4
+
+ }
+}
+
+gft_trade_can_give_tech_advanced_storm_manipulation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_advanced_storm_manipulation
+ FROM = {
+  NOT = { has_technology = tech_advanced_storm_manipulation }
+  has_technology = tech_storm_manipulation
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_afterburners_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_afterburners_1
+ FROM = {
+  NOT = { has_technology = tech_afterburners_1 }
+  has_technology = tech_thrusters_1
+
+ }
+}
+
+gft_trade_can_give_tech_afterburners_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_afterburners_2
+ FROM = {
+  NOT = { has_technology = tech_afterburners_2 }
+  has_technology = tech_afterburners_1
+has_technology = tech_thrusters_3
+
+ }
+}
+
+gft_trade_can_give_tech_alien_cloning = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_alien_cloning
+ FROM = {
+  NOT = { has_technology = tech_alien_cloning }
+  has_technology = tech_gravity_wells
+  has_grand_archive_dlc = yes
+OR = {
+	is_beastmasters_empire = yes
+	can_research_technology = tech_genome_mapping
+}
+ }
+}
+
+gft_trade_can_give_tech_alien_life_studies = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_alien_life_studies
+ FROM = {
+  NOT = { has_technology = tech_alien_life_studies }
+
+  is_regular_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_alloys_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_alloys_1
+ FROM = {
+  NOT = { has_technology = tech_alloys_1 }
+  has_technology = tech_basic_industry
+
+ }
+}
+
+gft_trade_can_give_tech_alloys_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_alloys_2
+ FROM = {
+  NOT = { has_technology = tech_alloys_2 }
+  has_technology = tech_alloys_1
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_antimatter_power = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_antimatter_power
+ FROM = {
+  NOT = { has_technology = tech_antimatter_power }
+  has_technology = tech_cold_fusion_power
+
+ }
+}
+
+gft_trade_can_give_tech_arc_emitter_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arc_emitter_1
+ FROM = {
+  NOT = { has_technology = tech_arc_emitter_1 }
+  has_technology = tech_disruptors_3
+OR = {
+	has_technology = tech_battleships
+	has_technology = tech_stingers
+}
+
+ }
+}
+
+gft_trade_can_give_tech_arc_emitter_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arc_emitter_2
+ FROM = {
+  NOT = { has_technology = tech_arc_emitter_2 }
+  has_technology = tech_arc_emitter_1
+
+ }
+}
+
+gft_trade_can_give_tech_arcane_deciphering = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arcane_deciphering
+ FROM = {
+  NOT = { has_technology = tech_arcane_deciphering }
+
+
+ }
+}
+
+gft_trade_can_give_tech_archaeo_detection_scrambler = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_detection_scrambler
+ FROM = {
+  NOT = { has_technology = tech_archaeo_detection_scrambler }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_lasers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_lasers
+ FROM = {
+  NOT = { has_technology = tech_archaeo_lasers }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_mass_accelerator = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_mass_accelerator
+ FROM = {
+  NOT = { has_technology = tech_archaeo_mass_accelerator }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_mass_drivers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_mass_drivers
+ FROM = {
+  NOT = { has_technology = tech_archaeo_mass_drivers }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_missiles = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_missiles
+ FROM = {
+  NOT = { has_technology = tech_archaeo_missiles }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_overcharger = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_overcharger
+ FROM = {
+  NOT = { has_technology = tech_archaeo_overcharger }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_pk_devolving_beam = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_pk_devolving_beam
+ FROM = {
+  NOT = { has_technology = tech_archaeo_pk_devolving_beam }
+
+  host_has_dlc = "Apocalypse"
+has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_point_defence = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_point_defence
+ FROM = {
+  NOT = { has_technology = tech_archaeo_point_defence }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_rampart = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_rampart
+ FROM = {
+  NOT = { has_technology = tech_archaeo_rampart }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_archaeo_refinery = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_refinery
+ FROM = {
+  NOT = { has_technology = tech_archaeo_refinery }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_archaeo_strike_crafts = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_strike_crafts
+ FROM = {
+  NOT = { has_technology = tech_archaeo_strike_crafts }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeo_titan_beam = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeo_titan_beam
+ FROM = {
+  NOT = { has_technology = tech_archaeo_titan_beam }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeoarmor = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeoarmor
+ FROM = {
+  NOT = { has_technology = tech_archaeoarmor }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeoshield = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeoshield
+ FROM = {
+  NOT = { has_technology = tech_archaeoshield }
+  has_technology = tech_archaeostudies
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archaeostudies = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archaeostudies
+ FROM = {
+  NOT = { has_technology = tech_archaeostudies }
+
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_archeology_lab = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archeology_lab
+ FROM = {
+  NOT = { has_technology = tech_archeology_lab }
+
+  has_ancrel = no
+ }
+}
+
+gft_trade_can_give_tech_archeology_lab_ancrel = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_archeology_lab_ancrel
+ FROM = {
+  NOT = { has_technology = tech_archeology_lab_ancrel }
+
+  has_ancrel = yes
+ }
+}
+
+gft_trade_can_give_tech_arkship_construction = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arkship_construction
+ FROM = {
+  NOT = { has_technology = tech_arkship_construction }
+  OR = {
+	has_technology = tech_destroyers
+	has_technology = tech_weavers
+}
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_arkship_exodus_jump = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arkship_exodus_jump
+ FROM = {
+  NOT = { has_technology = tech_arkship_exodus_jump }
+  has_technology = tech_arkship_tier_3
+has_technology = tech_jump_drive_1
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_arkship_planetary_refinery = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arkship_planetary_refinery
+ FROM = {
+  NOT = { has_technology = tech_arkship_planetary_refinery }
+  has_technology = tech_arkship_tier_3
+has_technology = tech_planetary_engineering
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_arkship_stellar_igniter = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arkship_stellar_igniter
+ FROM = {
+  NOT = { has_technology = tech_arkship_stellar_igniter }
+  has_technology = tech_arkship_tier_3
+has_technology = tech_mine_dark_matter
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_arkship_system_scanner = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arkship_system_scanner
+ FROM = {
+  NOT = { has_technology = tech_arkship_system_scanner }
+  has_technology = tech_arkship_tier_3
+has_technology = tech_sensors_2
+has_technology = tech_automated_exploration
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_arkship_tier_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arkship_tier_2
+ FROM = {
+  NOT = { has_technology = tech_arkship_tier_2 }
+  OR = {
+	has_technology = tech_cruisers
+	has_technology = tech_harbingers
+}
+has_technology = tech_arkship_construction
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_arkship_tier_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_arkship_tier_3
+ FROM = {
+  NOT = { has_technology = tech_arkship_tier_3 }
+  OR = {
+	has_technology = tech_stingers
+	has_technology = tech_battleships
+}
+has_technology = tech_arkship_tier_2
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_armor_hardeners_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_armor_hardeners_1
+ FROM = {
+  NOT = { has_technology = tech_armor_hardeners_1 }
+  has_technology = tech_advanced_metallurgy_1
+has_technology = tech_rare_crystals
+
+ }
+}
+
+gft_trade_can_give_tech_armor_hardeners_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_armor_hardeners_2
+ FROM = {
+  NOT = { has_technology = tech_armor_hardeners_2 }
+  has_technology = tech_armor_hardeners_1
+has_technology = tech_mine_living_metal
+
+ }
+}
+
+gft_trade_can_give_tech_artificial_moral_codes = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_artificial_moral_codes
+ FROM = {
+  NOT = { has_technology = tech_artificial_moral_codes }
+
+  NOT = {
+	has_ethic = ethic_gestalt_consciousness
+}
+ }
+}
+
+gft_trade_can_give_tech_ascension_theory = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ascension_theory
+ FROM = {
+  NOT = { has_technology = tech_ascension_theory }
+
+
+ }
+}
+
+gft_trade_can_give_tech_assembly_pattern = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_assembly_pattern
+ FROM = {
+  NOT = { has_technology = tech_assembly_pattern }
+
+
+ }
+}
+
+gft_trade_can_give_tech_assisted_detection = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_assisted_detection
+ FROM = {
+  NOT = { has_technology = tech_assisted_detection }
+  has_technology = tech_detection_array
+  has_first_contact_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_astral_harvesting = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_astral_harvesting
+ FROM = {
+  NOT = { has_technology = tech_astral_harvesting }
+
+  has_astral_planes_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_autocannons_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_autocannons_1
+ FROM = {
+  NOT = { has_technology = tech_autocannons_1 }
+  has_technology = tech_mass_drivers_2
+
+ }
+}
+
+gft_trade_can_give_tech_autocannons_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_autocannons_2
+ FROM = {
+  NOT = { has_technology = tech_autocannons_2 }
+  has_technology = tech_autocannons_1
+
+ }
+}
+
+gft_trade_can_give_tech_autocannons_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_autocannons_3
+ FROM = {
+  NOT = { has_technology = tech_autocannons_3 }
+  has_technology = tech_autocannons_2
+
+ }
+}
+
+gft_trade_can_give_tech_autocurating_vault = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_autocurating_vault
+ FROM = {
+  NOT = { has_technology = tech_autocurating_vault }
+  has_technology = tech_administrative_ai
+has_technology = tech_colonial_centralization
+  NOR = {
+	is_spiritualist = yes
+	is_wilderness_empire = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_automated_exploration = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_automated_exploration
+ FROM = {
+  NOT = { has_technology = tech_automated_exploration }
+
+
+ }
+}
+
+gft_trade_can_give_tech_autonomous_agents = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_autonomous_agents
+ FROM = {
+  NOT = { has_technology = tech_autonomous_agents }
+  has_technology = tech_colonial_centralization
+  has_ethic = ethic_gestalt_consciousness
+ }
+}
+
+gft_trade_can_give_tech_auxiliary_fire_control = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_auxiliary_fire_control
+ FROM = {
+  NOT = { has_technology = tech_auxiliary_fire_control }
+  has_technology = tech_combat_computers_1
+
+ }
+}
+
+gft_trade_can_give_tech_basic_science_lab_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_basic_science_lab_2
+ FROM = {
+  NOT = { has_technology = tech_basic_science_lab_2 }
+  has_technology = tech_basic_science_lab_1
+
+ }
+}
+
+gft_trade_can_give_tech_basic_science_lab_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_basic_science_lab_3
+ FROM = {
+  NOT = { has_technology = tech_basic_science_lab_3 }
+  has_technology = tech_basic_science_lab_2
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_battleship_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_battleship_build_speed
+ FROM = {
+  NOT = { has_technology = tech_battleship_build_speed }
+  has_technology = tech_battleships
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_battleship_hull_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_battleship_hull_1
+ FROM = {
+  NOT = { has_technology = tech_battleship_hull_1 }
+  has_technology = tech_battleships
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_battleship_hull_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_battleship_hull_2
+ FROM = {
+  NOT = { has_technology = tech_battleship_hull_2 }
+  has_technology = tech_battleship_hull_1
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_battleships = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_battleships
+ FROM = {
+  NOT = { has_technology = tech_battleships }
+  has_technology = tech_cruisers
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_binary_motivators = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_binary_motivators
+ FROM = {
+  NOT = { has_technology = tech_binary_motivators }
+  has_technology = tech_colonial_centralization
+has_technology = tech_robomodding_m
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+	is_hive_empire_with_machines = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_bio_reactor = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_bio_reactor
+ FROM = {
+  NOT = { has_technology = tech_bio_reactor }
+  has_technology = tech_industrial_farming
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_bio_reactor_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_bio_reactor_2
+ FROM = {
+  NOT = { has_technology = tech_bio_reactor_2 }
+  has_technology = tech_bio_reactor
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_biomechanics = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_biomechanics
+ FROM = {
+  NOT = { has_technology = tech_biomechanics }
+  has_technology = tech_adaptive_combat_algorithms
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_btc_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_btc_1
+ FROM = {
+  NOT = { has_technology = tech_btc_1 }
+
+  has_nemesis = yes
+has_ascension_perk = ap_become_the_crisis
+has_country_flag = can_build_star_eaters
+ }
+}
+
+gft_trade_can_give_tech_capacity_boosters = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_capacity_boosters
+ FROM = {
+  NOT = { has_technology = tech_capacity_boosters }
+  has_technology = tech_selected_lineages
+  is_machine_empire = no
+is_natural_design_empire = no
+ }
+}
+
+gft_trade_can_give_tech_capital_productivity_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_capital_productivity_1
+ FROM = {
+  NOT = { has_technology = tech_capital_productivity_1 }
+  has_technology = tech_planetary_unification
+
+ }
+}
+
+gft_trade_can_give_tech_capital_productivity_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_capital_productivity_2
+ FROM = {
+  NOT = { has_technology = tech_capital_productivity_2 }
+  has_technology = tech_colonial_centralization
+has_technology = tech_capital_productivity_1
+
+ }
+}
+
+gft_trade_can_give_tech_capital_productivity_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_capital_productivity_3
+ FROM = {
+  NOT = { has_technology = tech_capital_productivity_3 }
+  has_technology = tech_galactic_administration
+has_technology = tech_capital_productivity_2
+
+ }
+}
+
+gft_trade_can_give_tech_centralized_command = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_centralized_command
+ FROM = {
+  NOT = { has_technology = tech_centralized_command }
+
+
+ }
+}
+
+gft_trade_can_give_tech_civilian_arkship = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_civilian_arkship
+ FROM = {
+  NOT = { has_technology = tech_civilian_arkship }
+  has_technology = tech_planetary_engineering
+has_technology = tech_arkship_construction
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_climate_restoration = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_climate_restoration
+ FROM = {
+  NOT = { has_technology = tech_climate_restoration }
+  has_technology = tech_terrestrial_sculpting
+
+ }
+}
+
+gft_trade_can_give_tech_cloaking_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cloaking_1
+ FROM = {
+  NOT = { has_technology = tech_cloaking_1 }
+  has_technology = tech_shields_2
+  has_first_contact_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_cloaking_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cloaking_2
+ FROM = {
+  NOT = { has_technology = tech_cloaking_2 }
+  has_technology = tech_cloaking_1
+has_technology = tech_shields_3
+  has_first_contact_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_cloaking_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cloaking_3
+ FROM = {
+  NOT = { has_technology = tech_cloaking_3 }
+  has_technology = tech_cloaking_2
+has_technology = tech_shields_4
+  has_first_contact_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_cloaking_psi = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cloaking_psi
+ FROM = {
+  NOT = { has_technology = tech_cloaking_psi }
+  has_technology = tech_psi_jump_drive_1
+  OR = {
+	has_shroud_dlc = yes
+	NOT = {
+		has_ethic = ethic_gestalt_consciousness
+	}
+}
+has_first_contact_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_cloning = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cloning
+ FROM = {
+  NOT = { has_technology = tech_cloning }
+  has_technology = tech_genome_mapping
+  OR = {
+	is_machine_empire = no
+	has_civic = civic_machine_assimilator
+}
+is_wilderness_empire = no
+is_natural_design_empire = no
+ }
+}
+
+gft_trade_can_give_tech_cold_fusion_power = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cold_fusion_power
+ FROM = {
+  NOT = { has_technology = tech_cold_fusion_power }
+  has_technology = tech_fusion_power
+
+ }
+}
+
+gft_trade_can_give_tech_collective_production_methods = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_collective_production_methods
+ FROM = {
+  NOT = { has_technology = tech_collective_production_methods }
+  has_technology = tech_unity_of_purpose
+  is_hive_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_collective_self = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_collective_self
+ FROM = {
+  NOT = { has_technology = tech_collective_self }
+  has_technology = tech_colonial_centralization
+  NOT = {
+	has_ethic = ethic_gestalt_consciousness
+}
+ }
+}
+
+gft_trade_can_give_tech_colonial_bureaucracy = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_colonial_bureaucracy
+ FROM = {
+  NOT = { has_technology = tech_colonial_bureaucracy }
+  has_technology = tech_adaptive_bureaucracy
+
+ }
+}
+
+gft_trade_can_give_tech_colonial_centralization = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_colonial_centralization
+ FROM = {
+  NOT = { has_technology = tech_colonial_centralization }
+  has_technology = tech_planetary_unification
+
+ }
+}
+
+gft_trade_can_give_tech_colonization_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_colonization_2
+ FROM = {
+  NOT = { has_technology = tech_colonization_2 }
+  has_technology = tech_colonization_1
+
+ }
+}
+
+gft_trade_can_give_tech_colonization_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_colonization_3
+ FROM = {
+  NOT = { has_technology = tech_colonization_3 }
+  has_technology = tech_colonization_2
+
+ }
+}
+
+gft_trade_can_give_tech_colonization_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_colonization_4
+ FROM = {
+  NOT = { has_technology = tech_colonization_4 }
+  has_technology = tech_colonization_3
+
+ }
+}
+
+gft_trade_can_give_tech_colonization_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_colonization_5
+ FROM = {
+  NOT = { has_technology = tech_colonization_5 }
+  has_technology = tech_colonization_4
+
+ }
+}
+
+gft_trade_can_give_tech_combat_computers_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_combat_computers_1
+ FROM = {
+  NOT = { has_technology = tech_combat_computers_1 }
+  has_technology = tech_administrative_ai
+
+ }
+}
+
+gft_trade_can_give_tech_combat_computers_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_combat_computers_2
+ FROM = {
+  NOT = { has_technology = tech_combat_computers_2 }
+  has_technology = tech_combat_computers_1
+has_technology = tech_self_aware_logic
+
+ }
+}
+
+gft_trade_can_give_tech_combat_computers_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_combat_computers_3
+ FROM = {
+  NOT = { has_technology = tech_combat_computers_3 }
+  has_technology = tech_combat_computers_2
+has_technology = tech_sapient_ai
+  NOT = {
+	has_ethic = ethic_gestalt_consciousness
+}
+ }
+}
+
+gft_trade_can_give_tech_combat_computers_autonomous = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_combat_computers_autonomous
+ FROM = {
+  NOT = { has_technology = tech_combat_computers_autonomous }
+  has_technology = tech_combat_computers_2
+  has_ethic = ethic_gestalt_consciousness
+ }
+}
+
+gft_trade_can_give_tech_combat_training = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_combat_training
+ FROM = {
+  NOT = { has_technology = tech_combat_training }
+  has_technology = tech_centralized_command
+
+ }
+}
+
+gft_trade_can_give_tech_command_matrix = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_command_matrix
+ FROM = {
+  NOT = { has_technology = tech_command_matrix }
+  has_technology = tech_refit_standards
+
+ }
+}
+
+gft_trade_can_give_tech_consecration_fields = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_consecration_fields
+ FROM = {
+  NOT = { has_technology = tech_consecration_fields }
+  has_technology = tech_holographic_rituals
+has_technology = tech_colonial_centralization
+  OR = {
+	is_spiritualist = yes
+	AND = {
+		is_gestalt = no
+		has_make_spiritualist_perk = yes
+	}
+}
+ }
+}
+
+gft_trade_can_give_tech_construction_templates = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_construction_templates
+ FROM = {
+  NOT = { has_technology = tech_construction_templates }
+  has_technology = tech_assembly_pattern
+
+ }
+}
+
+gft_trade_can_give_tech_consumer_good_refinement_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_consumer_good_refinement_1
+ FROM = {
+  NOT = { has_technology = tech_consumer_good_refinement_1 }
+  has_technology = tech_luxuries_1
+has_technology = tech_administrative_ai
+  country_uses_consumer_goods = yes
+ }
+}
+
+gft_trade_can_give_tech_consumer_good_refinement_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_consumer_good_refinement_2
+ FROM = {
+  NOT = { has_technology = tech_consumer_good_refinement_2 }
+  has_technology = tech_luxuries_2
+has_technology = tech_consumer_good_refinement_1
+has_technology = tech_self_aware_logic
+  country_uses_consumer_goods = yes
+ }
+}
+
+gft_trade_can_give_tech_controlled_mutations = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_controlled_mutations
+ FROM = {
+  NOT = { has_technology = tech_controlled_mutations }
+  has_technology = tech_alien_cloning
+  OR = {
+	is_beastmasters_empire = yes
+	has_any_dna = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_controlled_mutations_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_controlled_mutations_2
+ FROM = {
+  NOT = { has_technology = tech_controlled_mutations_2 }
+  has_technology = tech_controlled_mutations
+
+ }
+}
+
+gft_trade_can_give_tech_corvette_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_corvette_build_speed
+ FROM = {
+  NOT = { has_technology = tech_corvette_build_speed }
+  has_technology = tech_corvettes
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_corvette_hull_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_corvette_hull_1
+ FROM = {
+  NOT = { has_technology = tech_corvette_hull_1 }
+  has_technology = tech_corvettes
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_corvette_hull_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_corvette_hull_2
+ FROM = {
+  NOT = { has_technology = tech_corvette_hull_2 }
+  has_technology = tech_corvette_hull_1
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_cruiser_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cruiser_build_speed
+ FROM = {
+  NOT = { has_technology = tech_cruiser_build_speed }
+  has_technology = tech_cruisers
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_cruiser_hull_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cruiser_hull_1
+ FROM = {
+  NOT = { has_technology = tech_cruiser_hull_1 }
+  has_technology = tech_cruisers
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_cruiser_hull_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cruiser_hull_2
+ FROM = {
+  NOT = { has_technology = tech_cruiser_hull_2 }
+  has_technology = tech_cruiser_hull_1
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_cruisers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cruisers
+ FROM = {
+  NOT = { has_technology = tech_cruisers }
+  has_technology = tech_destroyers
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_cryostasis_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cryostasis_1
+ FROM = {
+  NOT = { has_technology = tech_cryostasis_1 }
+  has_technology = tech_administrative_ai
+has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_cryostasis_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cryostasis_2
+ FROM = {
+  NOT = { has_technology = tech_cryostasis_2 }
+  has_technology = tech_self_aware_logic
+has_technology = tech_cryostasis_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_cultural_heritage = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_cultural_heritage
+ FROM = {
+  NOT = { has_technology = tech_cultural_heritage }
+  has_technology = tech_planetary_unification
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_curator_lab = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_curator_lab
+ FROM = {
+  NOT = { has_technology = tech_curator_lab }
+
+
+ }
+}
+
+gft_trade_can_give_tech_dangerous_wildlife = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_dangerous_wildlife
+ FROM = {
+  NOT = { has_technology = tech_dangerous_wildlife }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_dark_matter_detection = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_dark_matter_detection
+ FROM = {
+  NOT = { has_technology = tech_dark_matter_detection }
+  has_technology = tech_detection_array
+has_technology = tech_mine_dark_matter
+  has_first_contact_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_decryption_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_decryption_1
+ FROM = {
+  NOT = { has_technology = tech_decryption_1 }
+  has_technology = tech_colonial_bureaucracy
+
+ }
+}
+
+gft_trade_can_give_tech_decryption_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_decryption_2
+ FROM = {
+  NOT = { has_technology = tech_decryption_2 }
+  has_technology = tech_decryption_1
+
+ }
+}
+
+gft_trade_can_give_tech_decryption_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_decryption_3
+ FROM = {
+  NOT = { has_technology = tech_decryption_3 }
+  has_technology = tech_decryption_2
+
+ }
+}
+
+gft_trade_can_give_tech_deep_sinkhole = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_deep_sinkhole
+ FROM = {
+  NOT = { has_technology = tech_deep_sinkhole }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_deep_space_citadel = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_deep_space_citadel
+ FROM = {
+  NOT = { has_technology = tech_deep_space_citadel }
+  has_technology = tech_starbase_3
+  has_biogenesis_dlc = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_defense_platform_hull_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_defense_platform_hull_1
+ FROM = {
+  NOT = { has_technology = tech_defense_platform_hull_1 }
+  has_technology = tech_starbase_3
+
+ }
+}
+
+gft_trade_can_give_tech_dense_jungle = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_dense_jungle
+ FROM = {
+  NOT = { has_technology = tech_dense_jungle }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_destroyer_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_destroyer_build_speed
+ FROM = {
+  NOT = { has_technology = tech_destroyer_build_speed }
+  has_technology = tech_destroyers
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_destroyer_hull_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_destroyer_hull_1
+ FROM = {
+  NOT = { has_technology = tech_destroyer_hull_1 }
+  has_technology = tech_destroyers
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_destroyer_hull_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_destroyer_hull_2
+ FROM = {
+  NOT = { has_technology = tech_destroyer_hull_2 }
+  has_technology = tech_destroyer_hull_1
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_destroyers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_destroyers
+ FROM = {
+  NOT = { has_technology = tech_destroyers }
+  has_technology = tech_corvettes
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_detection_array = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_detection_array
+ FROM = {
+  NOT = { has_technology = tech_detection_array }
+  has_technology = tech_sensors_2
+  has_first_contact_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_disruptors_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_disruptors_1
+ FROM = {
+  NOT = { has_technology = tech_disruptors_1 }
+  has_technology = tech_lasers_2
+
+ }
+}
+
+gft_trade_can_give_tech_disruptors_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_disruptors_2
+ FROM = {
+  NOT = { has_technology = tech_disruptors_2 }
+  has_technology = tech_disruptors_1
+
+ }
+}
+
+gft_trade_can_give_tech_disruptors_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_disruptors_3
+ FROM = {
+  NOT = { has_technology = tech_disruptors_3 }
+  has_technology = tech_disruptors_2
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_fleet_size_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_fleet_size_1
+ FROM = {
+  NOT = { has_technology = tech_doctrine_fleet_size_1 }
+
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_fleet_size_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_fleet_size_2
+ FROM = {
+  NOT = { has_technology = tech_doctrine_fleet_size_2 }
+  has_technology = tech_doctrine_fleet_size_1
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_fleet_size_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_fleet_size_3
+ FROM = {
+  NOT = { has_technology = tech_doctrine_fleet_size_3 }
+  has_technology = tech_doctrine_fleet_size_2
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_fleet_size_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_fleet_size_4
+ FROM = {
+  NOT = { has_technology = tech_doctrine_fleet_size_4 }
+  has_technology = tech_doctrine_fleet_size_3
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_fleet_size_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_fleet_size_5
+ FROM = {
+  NOT = { has_technology = tech_doctrine_fleet_size_5 }
+  has_technology = tech_doctrine_fleet_size_4
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_navy_size_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_navy_size_1
+ FROM = {
+  NOT = { has_technology = tech_doctrine_navy_size_1 }
+
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_navy_size_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_navy_size_2
+ FROM = {
+  NOT = { has_technology = tech_doctrine_navy_size_2 }
+  has_technology = tech_doctrine_navy_size_1
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_navy_size_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_navy_size_3
+ FROM = {
+  NOT = { has_technology = tech_doctrine_navy_size_3 }
+  has_technology = tech_doctrine_navy_size_2
+
+ }
+}
+
+gft_trade_can_give_tech_doctrine_navy_size_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_doctrine_navy_size_4
+ FROM = {
+  NOT = { has_technology = tech_doctrine_navy_size_4 }
+  has_technology = tech_doctrine_navy_size_3
+
+ }
+}
+
+gft_trade_can_give_tech_droid_workers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_droid_workers
+ FROM = {
+  NOT = { has_technology = tech_droid_workers }
+  has_technology = tech_robotic_workers
+has_technology = tech_colonial_centralization
+  NOR = {
+	has_ethic = "ethic_gestalt_consciousness"
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_dyson_sphere = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_dyson_sphere
+ FROM = {
+  NOT = { has_technology = tech_dyson_sphere }
+  has_technology = tech_mega_engineering
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_eco_simulation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_eco_simulation
+ FROM = {
+  NOT = { has_technology = tech_eco_simulation }
+  has_technology = tech_industrial_farming
+
+ }
+}
+
+gft_trade_can_give_tech_ecological_adaptation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ecological_adaptation
+ FROM = {
+  NOT = { has_technology = tech_ecological_adaptation }
+  has_technology = tech_terrestrial_sculpting
+
+ }
+}
+
+gft_trade_can_give_tech_effective_bureaucracy = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_effective_bureaucracy
+ FROM = {
+  NOT = { has_technology = tech_effective_bureaucracy }
+  has_technology = tech_adaptive_bureaucracy
+  is_gestalt = no
+ }
+}
+
+gft_trade_can_give_tech_embodied_dynamism = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_embodied_dynamism
+ FROM = {
+  NOT = { has_technology = tech_embodied_dynamism }
+  has_technology = tech_autonomous_agents
+  has_ethic = ethic_gestalt_consciousness
+ }
+}
+
+gft_trade_can_give_tech_encryption_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_encryption_1
+ FROM = {
+  NOT = { has_technology = tech_encryption_1 }
+  has_technology = tech_colonial_bureaucracy
+
+ }
+}
+
+gft_trade_can_give_tech_encryption_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_encryption_2
+ FROM = {
+  NOT = { has_technology = tech_encryption_2 }
+  has_technology = tech_encryption_1
+
+ }
+}
+
+gft_trade_can_give_tech_encryption_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_encryption_3
+ FROM = {
+  NOT = { has_technology = tech_encryption_3 }
+  has_technology = tech_encryption_2
+
+ }
+}
+
+gft_trade_can_give_tech_energy_lance_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_energy_lance_1
+ FROM = {
+  NOT = { has_technology = tech_energy_lance_1 }
+  has_technology = tech_lasers_4
+OR = {
+	has_technology = tech_battleships
+	has_technology = tech_stingers
+}
+
+ }
+}
+
+gft_trade_can_give_tech_energy_lance_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_energy_lance_2
+ FROM = {
+  NOT = { has_technology = tech_energy_lance_2 }
+  has_technology = tech_lasers_5
+has_technology = tech_energy_lance_1
+
+ }
+}
+
+gft_trade_can_give_tech_energy_torpedoes_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_energy_torpedoes_1
+ FROM = {
+  NOT = { has_technology = tech_energy_torpedoes_1 }
+  has_technology = tech_lasers_4
+OR = {
+	has_technology = tech_torpedoes_1
+	has_technology = tech_harbingers
+}
+
+ }
+}
+
+gft_trade_can_give_tech_energy_torpedoes_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_energy_torpedoes_2
+ FROM = {
+  NOT = { has_technology = tech_energy_torpedoes_2 }
+  has_technology = tech_energy_torpedoes_1
+
+ }
+}
+
+gft_trade_can_give_tech_engineering_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_engineering_1
+ FROM = {
+  NOT = { has_technology = tech_engineering_1 }
+  has_technology = tech_basic_science_lab_1
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_engineering_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_engineering_2
+ FROM = {
+  NOT = { has_technology = tech_engineering_2 }
+  has_technology = tech_engineering_1
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_engineering_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_engineering_3
+ FROM = {
+  NOT = { has_technology = tech_engineering_3 }
+  has_technology = tech_engineering_2
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_epigenetic_triggers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_epigenetic_triggers
+ FROM = {
+  NOT = { has_technology = tech_epigenetic_triggers }
+  has_technology = tech_genome_mapping
+  NOR = {
+	has_valid_civic = civic_fanatic_purifiers
+	is_natural_design_empire = yes
+	is_wilderness_empire = yes
+}
+OR = {
+	is_machine_empire = no
+	has_civic = civic_machine_assimilator
+	has_civic = civic_machine_servitor
+	has_civic = civic_machine_guided_sapience
+}
+ }
+}
+
+gft_trade_can_give_tech_executive_retreat = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_executive_retreat
+ FROM = {
+  NOT = { has_technology = tech_executive_retreat }
+
+  is_megacorp = yes
+ }
+}
+
+gft_trade_can_give_tech_existential_campaigns = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_existential_campaigns
+ FROM = {
+  NOT = { has_technology = tech_existential_campaigns }
+  has_technology = tech_galactic_campaigns
+
+ }
+}
+
+gft_trade_can_give_tech_exotic_gases = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_exotic_gases
+ FROM = {
+  NOT = { has_technology = tech_exotic_gases }
+  has_technology = tech_basic_industry
+
+ }
+}
+
+gft_trade_can_give_tech_experimental_subspace_navigation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_experimental_subspace_navigation
+ FROM = {
+  NOT = { has_technology = tech_experimental_subspace_navigation }
+  has_technology = tech_sensors_2
+
+ }
+}
+
+gft_trade_can_give_tech_federation_code = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_federation_code
+ FROM = {
+  NOT = { has_technology = tech_federation_code }
+  has_technology = tech_colonial_centralization
+  OR = {
+	days_passed = 0
+	any_relation = {
+		can_form_federation_with_empire = yes
+	}
+	has_tradition = tr_diplomacy_adopt
+}
+ }
+}
+
+gft_trade_can_give_tech_flak_batteries_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_flak_batteries_2
+ FROM = {
+  NOT = { has_technology = tech_flak_batteries_2 }
+  has_technology = tech_flak_batteries_1
+
+ }
+}
+
+gft_trade_can_give_tech_flak_batteries_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_flak_batteries_3
+ FROM = {
+  NOT = { has_technology = tech_flak_batteries_3 }
+  has_technology = tech_flak_batteries_2
+
+ }
+}
+
+gft_trade_can_give_tech_food_processing_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_food_processing_1
+ FROM = {
+  NOT = { has_technology = tech_food_processing_1 }
+  has_technology = tech_eco_simulation
+
+ }
+}
+
+gft_trade_can_give_tech_food_processing_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_food_processing_2
+ FROM = {
+  NOT = { has_technology = tech_food_processing_2 }
+  has_technology = tech_food_processing_1
+
+ }
+}
+
+gft_trade_can_give_tech_frontier_health = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_frontier_health
+ FROM = {
+  NOT = { has_technology = tech_frontier_health }
+  has_technology = tech_basic_health
+has_technology = tech_genome_mapping
+  is_regular_empire = yes
+is_individual_machine = no
+ }
+}
+
+gft_trade_can_give_tech_frontier_hospital = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_frontier_hospital
+ FROM = {
+  NOT = { has_technology = tech_frontier_hospital }
+  has_technology = tech_frontier_health
+has_technology = tech_colonial_centralization
+  is_gestalt = no
+is_individual_machine = no
+ }
+}
+
+gft_trade_can_give_tech_ftl_inhibitor = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ftl_inhibitor
+ FROM = {
+  NOT = { has_technology = tech_ftl_inhibitor }
+  has_technology = tech_hyper_drive_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_fusion_power = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_fusion_power
+ FROM = {
+  NOT = { has_technology = tech_fusion_power }
+  has_technology = tech_fission_power
+
+ }
+}
+
+gft_trade_can_give_tech_galactic_administration = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_galactic_administration
+ FROM = {
+  NOT = { has_technology = tech_galactic_administration }
+  has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_galactic_ambitions = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_galactic_ambitions
+ FROM = {
+  NOT = { has_technology = tech_galactic_ambitions }
+
+
+ }
+}
+
+gft_trade_can_give_tech_galactic_archivism = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_galactic_archivism
+ FROM = {
+  NOT = { has_technology = tech_galactic_archivism }
+
+  has_grand_archive_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_galactic_bureaucracy = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_galactic_bureaucracy
+ FROM = {
+  NOT = { has_technology = tech_galactic_bureaucracy }
+  has_technology = tech_colonial_bureaucracy
+
+ }
+}
+
+gft_trade_can_give_tech_galactic_campaigns = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_galactic_campaigns
+ FROM = {
+  NOT = { has_technology = tech_galactic_campaigns }
+  has_technology = tech_interstellar_campaigns
+
+ }
+}
+
+gft_trade_can_give_tech_galactic_markets = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_galactic_markets
+ FROM = {
+  NOT = { has_technology = tech_galactic_markets }
+  has_technology = tech_colonial_centralization
+has_technology = tech_interstellar_economics
+  is_gestalt = no
+ }
+}
+
+gft_trade_can_give_tech_gateway_activation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gateway_activation
+ FROM = {
+  NOT = { has_technology = tech_gateway_activation }
+  has_technology = tech_hyper_drive_3
+
+ }
+}
+
+gft_trade_can_give_tech_gateway_construction = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gateway_construction
+ FROM = {
+  NOT = { has_technology = tech_gateway_construction }
+  has_technology = tech_gateway_activation
+has_technology = tech_mega_engineering
+
+ }
+}
+
+gft_trade_can_give_tech_gene_banks = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gene_banks
+ FROM = {
+  NOT = { has_technology = tech_gene_banks }
+  has_technology = tech_cloning
+  OR = {
+	is_machine_empire = no
+	is_wilderness_empire = no
+	has_civic = civic_machine_assimilator
+}
+is_natural_design_empire = no
+ }
+}
+
+gft_trade_can_give_tech_gene_crops = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gene_crops
+ FROM = {
+  NOT = { has_technology = tech_gene_crops }
+  has_technology = tech_eco_simulation
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_gene_expressions = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gene_expressions
+ FROM = {
+  NOT = { has_technology = tech_gene_expressions }
+  has_technology = tech_gene_tailoring
+  OR = {
+	NOR = {
+		is_machine_empire = yes
+		is_individual_machine = yes
+	}
+	has_civic = civic_machine_assimilator
+	has_civic = civic_machine_servitor
+}
+NOR = {
+	has_valid_civic = civic_natural_design
+	has_valid_civic = civic_hive_natural_design
+}
+ }
+}
+
+gft_trade_can_give_tech_gene_seed_purification = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gene_seed_purification
+ FROM = {
+  NOT = { has_technology = tech_gene_seed_purification }
+  has_technology = tech_gene_tailoring
+  NOR = {
+	is_machine_empire = yes
+	is_natural_design_empire = yes
+	is_individual_machine = yes
+	is_wilderness_empire = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_gene_tailoring = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gene_tailoring
+ FROM = {
+  NOT = { has_technology = tech_gene_tailoring }
+  has_technology = tech_genome_mapping
+  OR = {
+	is_machine_empire = no
+	has_civic = civic_machine_assimilator
+	has_civic = civic_machine_servitor
+}
+is_natural_design_empire = no
+ }
+}
+
+gft_trade_can_give_tech_genome_mapping = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_genome_mapping
+ FROM = {
+  NOT = { has_technology = tech_genome_mapping }
+
+  OR = {
+	is_machine_empire = no
+	has_civic = civic_machine_assimilator
+	has_civic = civic_machine_servitor
+	has_civic = civic_machine_guided_sapience
+}
+ }
+}
+
+gft_trade_can_give_tech_glandular_acclimation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_glandular_acclimation
+ FROM = {
+  NOT = { has_technology = tech_glandular_acclimation }
+  has_technology = tech_gene_tailoring
+  OR = {
+	is_machine_empire = no
+	has_civic = civic_machine_assimilator
+	has_civic = civic_machine_servitor
+}
+is_natural_design_empire = no
+ }
+}
+
+gft_trade_can_give_tech_global_defense_grid = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_global_defense_grid
+ FROM = {
+  NOT = { has_technology = tech_global_defense_grid }
+  has_technology = tech_ground_defense_planning
+
+ }
+}
+
+gft_trade_can_give_tech_global_production_strategy = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_global_production_strategy
+ FROM = {
+  NOT = { has_technology = tech_global_production_strategy }
+  has_technology = tech_alloys_1
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_global_research_initiative = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_global_research_initiative
+ FROM = {
+  NOT = { has_technology = tech_global_research_initiative }
+  has_technology = tech_basic_science_lab_2
+has_technology = tech_colonial_centralization
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_gravity_snare_capacity_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gravity_snare_capacity_1
+ FROM = {
+  NOT = { has_technology = tech_gravity_snare_capacity_1 }
+  has_technology = tech_gravity_wells
+  has_grand_archive_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_gravity_snare_capacity_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gravity_snare_capacity_2
+ FROM = {
+  NOT = { has_technology = tech_gravity_snare_capacity_2 }
+  has_technology = tech_gravity_snare_capacity_1
+  has_grand_archive_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_gravity_snare_capacity_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gravity_snare_capacity_3
+ FROM = {
+  NOT = { has_technology = tech_gravity_snare_capacity_3 }
+  has_technology = tech_gravity_snare_capacity_2
+  has_grand_archive_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_gravity_wells = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_gravity_wells
+ FROM = {
+  NOT = { has_technology = tech_gravity_wells }
+
+  has_grand_archive_dlc = yes
+OR = {
+	has_encountered_any_fauna = yes
+	is_beastmasters_empire = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_ground_defense_planning = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ground_defense_planning
+ FROM = {
+  NOT = { has_technology = tech_ground_defense_planning }
+  has_technology = tech_planetary_defenses
+
+ }
+}
+
+gft_trade_can_give_tech_growth_chamber_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_growth_chamber_1
+ FROM = {
+  NOT = { has_technology = tech_growth_chamber_1 }
+  has_technology = tech_stingers
+OR = {
+	has_technology = tech_mauler_growth_1
+	has_technology = tech_stinger_growth_1
+	has_technology = tech_weaver_growth_1
+	has_technology = tech_harbinger_growth_1
+}
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_growth_chamber_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_growth_chamber_2
+ FROM = {
+  NOT = { has_technology = tech_growth_chamber_2 }
+  has_technology = tech_growth_chamber_1
+OR = {
+	has_technology = tech_mauler_growth_2
+	has_technology = tech_stinger_growth_2
+	has_technology = tech_weaver_growth_2
+	has_technology = tech_harbinger_growth_2
+}
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_habitat_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_habitat_1
+ FROM = {
+  NOT = { has_technology = tech_habitat_1 }
+  has_technology = tech_starbase_3
+  is_wilderness_empire = no
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_habitat_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_habitat_2
+ FROM = {
+  NOT = { has_technology = tech_habitat_2 }
+  has_technology = tech_habitat_1
+has_technology = tech_starbase_4
+  is_wilderness_empire = no
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_habitat_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_habitat_3
+ FROM = {
+  NOT = { has_technology = tech_habitat_3 }
+  has_technology = tech_habitat_2
+has_technology = tech_starbase_5
+  is_wilderness_empire = no
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_harbinger_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_harbinger_build_speed
+ FROM = {
+  NOT = { has_technology = tech_harbinger_build_speed }
+  has_technology = tech_harbingers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_harbinger_growth_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_harbinger_growth_1
+ FROM = {
+  NOT = { has_technology = tech_harbinger_growth_1 }
+  has_technology = tech_harbingers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_harbinger_growth_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_harbinger_growth_2
+ FROM = {
+  NOT = { has_technology = tech_harbinger_growth_2 }
+  has_technology = tech_harbinger_growth_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_harbingers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_harbingers
+ FROM = {
+  NOT = { has_technology = tech_harbingers }
+  has_technology = tech_weavers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_heritage_site = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_heritage_site
+ FROM = {
+  NOT = { has_technology = tech_heritage_site }
+  has_technology = tech_cultural_heritage
+
+ }
+}
+
+gft_trade_can_give_tech_hive_cluster = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_hive_cluster
+ FROM = {
+  NOT = { has_technology = tech_hive_cluster }
+  has_technology = tech_hive_node
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_hive_confluence = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_hive_confluence
+ FROM = {
+  NOT = { has_technology = tech_hive_confluence }
+  has_technology = tech_hive_cluster
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_holographic_rituals = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_holographic_rituals
+ FROM = {
+  NOT = { has_technology = tech_holographic_rituals }
+  has_technology = tech_planetary_government
+  OR = {
+	is_spiritualist = yes
+	AND = {
+		is_gestalt = no
+		has_make_spiritualist_perk = yes
+	}
+}
+ }
+}
+
+gft_trade_can_give_tech_housing_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_housing_1
+ FROM = {
+  NOT = { has_technology = tech_housing_1 }
+
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_housing_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_housing_2
+ FROM = {
+  NOT = { has_technology = tech_housing_2 }
+  has_technology = tech_housing_1
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_housing_agrarian_idyll = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_housing_agrarian_idyll
+ FROM = {
+  NOT = { has_technology = tech_housing_agrarian_idyll }
+
+
+ }
+}
+
+gft_trade_can_give_tech_hyper_drive_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_hyper_drive_2
+ FROM = {
+  NOT = { has_technology = tech_hyper_drive_2 }
+  has_technology = tech_hyper_drive_1
+
+ }
+}
+
+gft_trade_can_give_tech_hyper_drive_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_hyper_drive_3
+ FROM = {
+  NOT = { has_technology = tech_hyper_drive_3 }
+  has_technology = tech_hyper_drive_2
+
+ }
+}
+
+gft_trade_can_give_tech_hyper_entertainment_forum = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_hyper_entertainment_forum
+ FROM = {
+  NOT = { has_technology = tech_hyper_entertainment_forum }
+  has_technology = tech_holo_entertainment
+  is_gestalt = no
+ }
+}
+
+gft_trade_can_give_tech_hyper_relays = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_hyper_relays
+ FROM = {
+  NOT = { has_technology = tech_hyper_relays }
+  has_technology = tech_hyper_drive_2
+  has_overlord_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_hypercomms_forum = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_hypercomms_forum
+ FROM = {
+  NOT = { has_technology = tech_hypercomms_forum }
+  has_technology = tech_heritage_site
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_identity_fusion = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_identity_fusion
+ FROM = {
+  NOT = { has_technology = tech_identity_fusion }
+
+  has_machine_age_dlc = yes
+has_country_flag = advanced_identity_creation
+ }
+}
+
+gft_trade_can_give_tech_identity_initialization = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_identity_initialization
+ FROM = {
+  NOT = { has_technology = tech_identity_initialization }
+
+  has_machine_age_dlc = yes
+has_country_flag = advanced_identity_creation
+ }
+}
+
+gft_trade_can_give_tech_improved_incubators = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_improved_incubators
+ FROM = {
+  NOT = { has_technology = tech_improved_incubators }
+  has_technology = tech_alien_cloning
+  has_grand_archive_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_industrial_storm_protection = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_industrial_storm_protection
+ FROM = {
+  NOT = { has_technology = tech_industrial_storm_protection }
+
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_integrated_cybernetics = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_integrated_cybernetics
+ FROM = {
+  NOT = { has_technology = tech_integrated_cybernetics }
+  has_technology = tech_powered_exoskeletons
+has_technology = tech_colonial_centralization
+  OR = {
+	AND = {
+		is_machine_empire = no
+		is_individual_machine = no
+	}
+	has_civic = civic_machine_assimilator
+}
+ }
+}
+
+gft_trade_can_give_tech_interstellar_assembly = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_interstellar_assembly
+ FROM = {
+  NOT = { has_technology = tech_interstellar_assembly }
+  has_technology = tech_mega_engineering
+  has_megacorp = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_interstellar_campaigns = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_interstellar_campaigns
+ FROM = {
+  NOT = { has_technology = tech_interstellar_campaigns }
+  has_technology = tech_galactic_ambitions
+
+ }
+}
+
+gft_trade_can_give_tech_interstellar_economics = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_interstellar_economics
+ FROM = {
+  NOT = { has_technology = tech_interstellar_economics }
+  has_technology = tech_space_trading
+  is_gestalt = no
+ }
+}
+
+gft_trade_can_give_tech_interstellar_fleet_traditions = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_interstellar_fleet_traditions
+ FROM = {
+  NOT = { has_technology = tech_interstellar_fleet_traditions }
+
+
+ }
+}
+
+gft_trade_can_give_tech_juggernaut = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_juggernaut
+ FROM = {
+  NOT = { has_technology = tech_juggernaut }
+  OR = {
+	has_technology = tech_starbase_5
+	has_technology = tech_arkship_construction
+}
+OR = {
+	has_technology = tech_battleships
+	has_technology = tech_harbinger_growth_2
+}
+  host_has_dlc = "Federations"
+ }
+}
+
+gft_trade_can_give_tech_jump_drive_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_jump_drive_1
+ FROM = {
+  NOT = { has_technology = tech_jump_drive_1 }
+  has_technology = tech_zero_point_power
+
+ }
+}
+
+gft_trade_can_give_tech_kinetic_artillery_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_kinetic_artillery_1
+ FROM = {
+  NOT = { has_technology = tech_kinetic_artillery_1 }
+  has_technology = tech_mass_drivers_4
+
+ }
+}
+
+gft_trade_can_give_tech_kinetic_artillery_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_kinetic_artillery_2
+ FROM = {
+  NOT = { has_technology = tech_kinetic_artillery_2 }
+  has_technology = tech_mass_drivers_5
+has_technology = tech_kinetic_artillery_1
+
+ }
+}
+
+gft_trade_can_give_tech_lasers_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lasers_2
+ FROM = {
+  NOT = { has_technology = tech_lasers_2 }
+  has_technology = tech_lasers_1
+
+ }
+}
+
+gft_trade_can_give_tech_lasers_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lasers_3
+ FROM = {
+  NOT = { has_technology = tech_lasers_3 }
+  has_technology = tech_lasers_2
+
+ }
+}
+
+gft_trade_can_give_tech_lasers_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lasers_4
+ FROM = {
+  NOT = { has_technology = tech_lasers_4 }
+  has_technology = tech_lasers_3
+
+ }
+}
+
+gft_trade_can_give_tech_lasers_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lasers_5
+ FROM = {
+  NOT = { has_technology = tech_lasers_5 }
+  has_technology = tech_lasers_4
+
+ }
+}
+
+gft_trade_can_give_tech_lathe_cogitator = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lathe_cogitator
+ FROM = {
+  NOT = { has_technology = tech_lathe_cogitator }
+
+  has_machine_age_dlc = yes
+has_ascension_perk = ap_cosmogenesis
+has_technology = tech_cosmogenesis_world
+ }
+}
+
+gft_trade_can_give_tech_lathe_life_support = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lathe_life_support
+ FROM = {
+  NOT = { has_technology = tech_lathe_life_support }
+
+  has_machine_age_dlc = yes
+has_ascension_perk = ap_cosmogenesis
+has_technology = tech_cosmogenesis_world
+ }
+}
+
+gft_trade_can_give_tech_lathe_overclocker = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lathe_overclocker
+ FROM = {
+  NOT = { has_technology = tech_lathe_overclocker }
+
+  has_machine_age_dlc = yes
+has_ascension_perk = ap_cosmogenesis
+has_technology = tech_cosmogenesis_world
+ }
+}
+
+gft_trade_can_give_tech_lathe_preserver = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lathe_preserver
+ FROM = {
+  NOT = { has_technology = tech_lathe_preserver }
+
+  has_machine_age_dlc = yes
+has_ascension_perk = ap_cosmogenesis
+has_technology = tech_cosmogenesis_world
+ }
+}
+
+gft_trade_can_give_tech_lathe_resonator = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lathe_resonator
+ FROM = {
+  NOT = { has_technology = tech_lathe_resonator }
+
+  has_machine_age_dlc = yes
+has_ascension_perk = ap_cosmogenesis
+has_technology = tech_cosmogenesis_world
+ }
+}
+
+gft_trade_can_give_tech_lathe_validator = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_lathe_validator
+ FROM = {
+  NOT = { has_technology = tech_lathe_validator }
+
+  has_machine_age_dlc = yes
+has_ascension_perk = ap_cosmogenesis
+has_technology = tech_cosmogenesis_world
+ }
+}
+
+gft_trade_can_give_tech_leviathan_techgenesis = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_leviathan_techgenesis
+ FROM = {
+  NOT = { has_technology = tech_leviathan_techgenesis }
+
+  has_machine_age_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_living_state = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_living_state
+ FROM = {
+  NOT = { has_technology = tech_living_state }
+  has_technology = tech_colonial_centralization
+  NOT = {
+	has_ethic = ethic_gestalt_consciousness
+}
+ }
+}
+
+gft_trade_can_give_tech_luxuries_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_luxuries_1
+ FROM = {
+  NOT = { has_technology = tech_luxuries_1 }
+  has_technology = tech_basic_industry
+  country_uses_consumer_goods = yes
+ }
+}
+
+gft_trade_can_give_tech_luxuries_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_luxuries_2
+ FROM = {
+  NOT = { has_technology = tech_luxuries_2 }
+  has_technology = tech_luxuries_1
+has_technology = tech_colonial_centralization
+  country_uses_consumer_goods = yes
+ }
+}
+
+gft_trade_can_give_tech_mandibles_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mandibles_2
+ FROM = {
+  NOT = { has_technology = tech_mandibles_2 }
+  has_technology = tech_maulers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_mandibles_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mandibles_3
+ FROM = {
+  NOT = { has_technology = tech_mandibles_3 }
+  has_technology = tech_mandibles_2
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_manifest_destiny = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_manifest_destiny
+ FROM = {
+  NOT = { has_technology = tech_manifest_destiny }
+  has_technology = tech_galactic_ambitions
+
+ }
+}
+
+gft_trade_can_give_tech_mass_accelerator_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mass_accelerator_1
+ FROM = {
+  NOT = { has_technology = tech_mass_accelerator_1 }
+  has_technology = tech_mass_drivers_4
+OR = {
+	has_technology = tech_battleships
+	has_technology = tech_stingers
+}
+
+ }
+}
+
+gft_trade_can_give_tech_mass_accelerator_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mass_accelerator_2
+ FROM = {
+  NOT = { has_technology = tech_mass_accelerator_2 }
+  has_technology = tech_mass_drivers_5
+has_technology = tech_mass_accelerator_1
+
+ }
+}
+
+gft_trade_can_give_tech_mass_drivers_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mass_drivers_2
+ FROM = {
+  NOT = { has_technology = tech_mass_drivers_2 }
+  has_technology = tech_mass_drivers_1
+
+ }
+}
+
+gft_trade_can_give_tech_mass_drivers_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mass_drivers_3
+ FROM = {
+  NOT = { has_technology = tech_mass_drivers_3 }
+  has_technology = tech_mass_drivers_2
+
+ }
+}
+
+gft_trade_can_give_tech_mass_drivers_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mass_drivers_4
+ FROM = {
+  NOT = { has_technology = tech_mass_drivers_4 }
+  has_technology = tech_mass_drivers_3
+
+ }
+}
+
+gft_trade_can_give_tech_mass_drivers_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mass_drivers_5
+ FROM = {
+  NOT = { has_technology = tech_mass_drivers_5 }
+  has_technology = tech_mass_drivers_4
+
+ }
+}
+
+gft_trade_can_give_tech_massive_glacier = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_massive_glacier
+ FROM = {
+  NOT = { has_technology = tech_massive_glacier }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_matter_decompressor = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_matter_decompressor
+ FROM = {
+  NOT = { has_technology = tech_matter_decompressor }
+  has_technology = tech_mega_engineering
+  has_megacorp = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_mauler_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mauler_build_speed
+ FROM = {
+  NOT = { has_technology = tech_mauler_build_speed }
+  has_technology = tech_maulers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_mauler_growth_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mauler_growth_1
+ FROM = {
+  NOT = { has_technology = tech_mauler_growth_1 }
+  has_technology = tech_maulers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_mauler_growth_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mauler_growth_2
+ FROM = {
+  NOT = { has_technology = tech_mauler_growth_2 }
+  has_technology = tech_mauler_growth_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_mega_art = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mega_art
+ FROM = {
+  NOT = { has_technology = tech_mega_art }
+  has_technology = tech_mega_engineering
+  has_megacorp = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_mega_assembly = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mega_assembly
+ FROM = {
+  NOT = { has_technology = tech_mega_assembly }
+  has_technology = tech_binary_motivators
+has_technology = tech_galactic_administration
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+	is_hive_empire_with_machines = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_mega_engineering = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mega_engineering
+ FROM = {
+  NOT = { has_technology = tech_mega_engineering }
+  OR = {
+	has_technology = tech_starbase_5
+	has_technology = tech_arkship_tier_3
+}
+has_technology = tech_zero_point_power
+OR = {
+	has_technology = tech_battleships
+	has_technology = tech_stingers
+}
+
+ }
+}
+
+gft_trade_can_give_tech_mega_shipyard = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mega_shipyard
+ FROM = {
+  NOT = { has_technology = tech_mega_shipyard }
+  has_technology = tech_mega_engineering
+  has_federations_dlc = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_metabolic_gases = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_metabolic_gases
+ FROM = {
+  NOT = { has_technology = tech_metabolic_gases }
+  has_technology = tech_improved_incubators
+  has_grand_archive_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_micro_replicators = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_micro_replicators
+ FROM = {
+  NOT = { has_technology = tech_micro_replicators }
+
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+	is_hive_empire_with_machines = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_military_arkship = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_military_arkship
+ FROM = {
+  NOT = { has_technology = tech_military_arkship }
+  OR = {
+	has_technology = tech_destroyers
+	has_technology = tech_mauler_growth_2
+}
+has_technology = tech_arkship_construction
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_mine_betharian = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mine_betharian
+ FROM = {
+  NOT = { has_technology = tech_mine_betharian }
+  has_technology = tech_space_construction
+
+ }
+}
+
+gft_trade_can_give_tech_mine_dark_matter = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mine_dark_matter
+ FROM = {
+  NOT = { has_technology = tech_mine_dark_matter }
+  has_technology = tech_sensors_4
+
+ }
+}
+
+gft_trade_can_give_tech_mine_exotic_gases = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mine_exotic_gases
+ FROM = {
+  NOT = { has_technology = tech_mine_exotic_gases }
+  has_technology = tech_space_construction
+
+ }
+}
+
+gft_trade_can_give_tech_mine_living_metal = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mine_living_metal
+ FROM = {
+  NOT = { has_technology = tech_mine_living_metal }
+  has_technology = tech_space_construction
+
+ }
+}
+
+gft_trade_can_give_tech_mine_rare_crystals = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mine_rare_crystals
+ FROM = {
+  NOT = { has_technology = tech_mine_rare_crystals }
+  has_technology = tech_space_construction
+
+ }
+}
+
+gft_trade_can_give_tech_mine_volatile_motes = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mine_volatile_motes
+ FROM = {
+  NOT = { has_technology = tech_mine_volatile_motes }
+  has_technology = tech_space_construction
+
+ }
+}
+
+gft_trade_can_give_tech_mine_zro = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mine_zro
+ FROM = {
+  NOT = { has_technology = tech_mine_zro }
+  has_technology = tech_sensors_3
+
+ }
+}
+
+gft_trade_can_give_tech_mineral_purification_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mineral_purification_1
+ FROM = {
+  NOT = { has_technology = tech_mineral_purification_1 }
+  has_technology = tech_mining_1
+
+ }
+}
+
+gft_trade_can_give_tech_mineral_purification_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mineral_purification_2
+ FROM = {
+  NOT = { has_technology = tech_mineral_purification_2 }
+  has_technology = tech_mineral_purification_1
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_mining_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mining_1
+ FROM = {
+  NOT = { has_technology = tech_mining_1 }
+  has_technology = tech_basic_industry
+
+ }
+}
+
+gft_trade_can_give_tech_mining_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mining_2
+ FROM = {
+  NOT = { has_technology = tech_mining_2 }
+  has_technology = tech_mining_1
+
+ }
+}
+
+gft_trade_can_give_tech_mining_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mining_3
+ FROM = {
+  NOT = { has_technology = tech_mining_3 }
+  has_technology = tech_mining_2
+
+ }
+}
+
+gft_trade_can_give_tech_missiles_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_missiles_2
+ FROM = {
+  NOT = { has_technology = tech_missiles_2 }
+  has_technology = tech_missiles_1
+has_technology = tech_fusion_power
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_missiles_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_missiles_3
+ FROM = {
+  NOT = { has_technology = tech_missiles_3 }
+  has_technology = tech_missiles_2
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_missiles_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_missiles_4
+ FROM = {
+  NOT = { has_technology = tech_missiles_4 }
+  has_technology = tech_missiles_3
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_missiles_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_missiles_5
+ FROM = {
+  NOT = { has_technology = tech_missiles_5 }
+  has_technology = tech_missiles_4
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_modular_engineering = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_modular_engineering
+ FROM = {
+  NOT = { has_technology = tech_modular_engineering }
+  OR = {
+	has_technology = tech_starbase_3
+	has_technology = tech_waystation_2
+}
+
+ }
+}
+
+gft_trade_can_give_tech_morphogenetic_field_mastery = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_morphogenetic_field_mastery
+ FROM = {
+  NOT = { has_technology = tech_morphogenetic_field_mastery }
+  has_technology = tech_epigenetic_triggers
+  NOR = {
+	is_machine_empire = yes
+	is_natural_design_empire = yes
+	is_individual_machine = yes
+	is_wilderness_empire = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_mountain_range = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_mountain_range
+ FROM = {
+  NOT = { has_technology = tech_mountain_range }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_nanite_assemblers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_nanite_assemblers
+ FROM = {
+  NOT = { has_technology = tech_nanite_assemblers }
+  has_technology = tech_binary_motivators
+has_technology = tech_galactic_administration
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+	is_hive_empire_with_machines = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_nanite_autocannon = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_nanite_autocannon
+ FROM = {
+  NOT = { has_technology = tech_nanite_autocannon }
+
+
+ }
+}
+
+gft_trade_can_give_tech_nanite_flak_batteries = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_nanite_flak_batteries
+ FROM = {
+  NOT = { has_technology = tech_nanite_flak_batteries }
+
+
+ }
+}
+
+gft_trade_can_give_tech_nanite_repair_system = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_nanite_repair_system
+ FROM = {
+  NOT = { has_technology = tech_nanite_repair_system }
+
+
+ }
+}
+
+gft_trade_can_give_tech_nanite_transmutation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_nanite_transmutation
+ FROM = {
+  NOT = { has_technology = tech_nanite_transmutation }
+
+  host_has_dlc = "Distant Stars Story Pack"
+ }
+}
+
+gft_trade_can_give_tech_nano_vitality_crops = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_nano_vitality_crops
+ FROM = {
+  NOT = { has_technology = tech_nano_vitality_crops }
+  has_technology = tech_gene_crops
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_neural_implants = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_neural_implants
+ FROM = {
+  NOT = { has_technology = tech_neural_implants }
+
+  is_regular_empire = yes
+allows_slavery = yes
+ }
+}
+
+gft_trade_can_give_tech_neuro_quantum_links = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_neuro_quantum_links
+ FROM = {
+  NOT = { has_technology = tech_neuro_quantum_links }
+  has_technology = tech_basic_science_lab_2
+has_technology = tech_integrated_cybernetics
+  is_wilderness_empire = no
+OR = {
+	is_machine_empire = no
+	has_civic = civic_machine_assimilator
+}
+ }
+}
+
+gft_trade_can_give_tech_node_culling_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_node_culling_1
+ FROM = {
+  NOT = { has_technology = tech_node_culling_1 }
+  has_technology = tech_colonial_centralization
+  is_hive_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_node_culling_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_node_culling_2
+ FROM = {
+  NOT = { has_technology = tech_node_culling_2 }
+  has_technology = tech_node_culling_1
+  is_hive_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_node_culling_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_node_culling_3
+ FROM = {
+  NOT = { has_technology = tech_node_culling_3 }
+  has_technology = tech_node_culling_2
+  is_hive_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_node_reformatting_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_node_reformatting_1
+ FROM = {
+  NOT = { has_technology = tech_node_reformatting_1 }
+  has_technology = tech_colonial_centralization
+  is_machine_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_node_reformatting_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_node_reformatting_2
+ FROM = {
+  NOT = { has_technology = tech_node_reformatting_2 }
+  has_technology = tech_node_reformatting_1
+  is_machine_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_node_reformatting_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_node_reformatting_3
+ FROM = {
+  NOT = { has_technology = tech_node_reformatting_3 }
+  has_technology = tech_node_reformatting_2
+  is_machine_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_noxious_swamp = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_noxious_swamp
+ FROM = {
+  NOT = { has_technology = tech_noxious_swamp }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_nutrient_replication = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_nutrient_replication
+ FROM = {
+  NOT = { has_technology = tech_nutrient_replication }
+  has_technology = tech_nano_vitality_crops
+  is_machine_empire = no
+is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_orbital_ring_tier_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_orbital_ring_tier_1
+ FROM = {
+  NOT = { has_technology = tech_orbital_ring_tier_1 }
+  has_technology = tech_starbase_3
+has_technology = tech_galactic_administration
+has_technology = tech_planetary_infrastructure_1
+  has_overlord_dlc = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_paradise_dome = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_paradise_dome
+ FROM = {
+  NOT = { has_technology = tech_paradise_dome }
+  has_technology = tech_housing_1
+  OR = {
+	is_gestalt = no
+	has_valid_civic = civic_machine_servitor
+	has_origin = origin_forever_cruise
+}
+ }
+}
+
+gft_trade_can_give_tech_pd_tracking_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pd_tracking_2
+ FROM = {
+  NOT = { has_technology = tech_pd_tracking_2 }
+  has_technology = tech_pd_tracking_1
+
+ }
+}
+
+gft_trade_can_give_tech_pd_tracking_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pd_tracking_3
+ FROM = {
+  NOT = { has_technology = tech_pd_tracking_3 }
+  has_technology = tech_pd_tracking_2
+
+ }
+}
+
+gft_trade_can_give_tech_penal_colonies = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_penal_colonies
+ FROM = {
+  NOT = { has_technology = tech_penal_colonies }
+  has_technology = tech_artificial_moral_codes
+  is_gestalt = no
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_physics_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_physics_1
+ FROM = {
+  NOT = { has_technology = tech_physics_1 }
+  has_technology = tech_basic_science_lab_1
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_physics_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_physics_2
+ FROM = {
+  NOT = { has_technology = tech_physics_2 }
+  has_technology = tech_physics_1
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_physics_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_physics_3
+ FROM = {
+  NOT = { has_technology = tech_physics_3 }
+  has_technology = tech_physics_2
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_pk_cracker = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pk_cracker
+ FROM = {
+  NOT = { has_technology = tech_pk_cracker }
+  has_technology = tech_colossus
+  host_has_dlc = "Apocalypse"
+has_country_flag = colossus_project
+is_pacifist = no
+ }
+}
+
+gft_trade_can_give_tech_pk_godray = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pk_godray
+ FROM = {
+  NOT = { has_technology = tech_pk_godray }
+  has_technology = tech_colossus
+  host_has_dlc = "Apocalypse"
+has_country_flag = colossus_project
+is_spiritualist = yes
+has_psionic_ascension = yes
+ }
+}
+
+gft_trade_can_give_tech_pk_nanobots = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pk_nanobots
+ FROM = {
+  NOT = { has_technology = tech_pk_nanobots }
+  has_technology = tech_colossus
+  host_has_dlc = "Apocalypse"
+has_country_flag = colossus_project
+has_valid_civic = civic_machine_assimilator
+ }
+}
+
+gft_trade_can_give_tech_pk_neutron = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pk_neutron
+ FROM = {
+  NOT = { has_technology = tech_pk_neutron }
+  has_technology = tech_colossus
+  host_has_dlc = "Apocalypse"
+has_country_flag = colossus_project
+OR = {
+	is_spiritualist = no
+	NOT = {
+		has_psionic_ascension = yes
+	}
+}
+is_pacifist = no
+ }
+}
+
+gft_trade_can_give_tech_pk_shielder = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pk_shielder
+ FROM = {
+  NOT = { has_technology = tech_pk_shielder }
+  has_technology = tech_colossus
+  host_has_dlc = "Apocalypse"
+has_country_flag = colossus_project
+ }
+}
+
+gft_trade_can_give_tech_pk_smelter = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_pk_smelter
+ FROM = {
+  NOT = { has_technology = tech_pk_smelter }
+  has_technology = tech_colossus
+  host_has_dlc = "Apocalypse"
+has_country_flag = colossus_project
+can_get_planet_smelter = yes
+ }
+}
+
+gft_trade_can_give_tech_planetary_engineering = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_planetary_engineering
+ FROM = {
+  NOT = { has_technology = tech_planetary_engineering }
+  has_technology = tech_space_exploration
+has_technology = tech_space_mining_2
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_planetary_infrastructure_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_planetary_infrastructure_1
+ FROM = {
+  NOT = { has_technology = tech_planetary_infrastructure_1 }
+  has_technology = tech_colonial_centralization
+has_technology = tech_ship_armor_2
+
+ }
+}
+
+gft_trade_can_give_tech_planetary_infrastructure_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_planetary_infrastructure_2
+ FROM = {
+  NOT = { has_technology = tech_planetary_infrastructure_2 }
+  has_technology = tech_galactic_administration
+has_technology = tech_ship_armor_4
+has_technology = tech_planetary_infrastructure_1
+
+ }
+}
+
+gft_trade_can_give_tech_planetary_shield_generator = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_planetary_shield_generator
+ FROM = {
+  NOT = { has_technology = tech_planetary_shield_generator }
+  has_technology = tech_shields_3
+
+ }
+}
+
+gft_trade_can_give_tech_planetary_unification = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_planetary_unification
+ FROM = {
+  NOT = { has_technology = tech_planetary_unification }
+  has_technology = tech_planetary_government
+
+ }
+}
+
+gft_trade_can_give_tech_plasma_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_plasma_1
+ FROM = {
+  NOT = { has_technology = tech_plasma_1 }
+  has_technology = tech_lasers_2
+
+ }
+}
+
+gft_trade_can_give_tech_plasma_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_plasma_2
+ FROM = {
+  NOT = { has_technology = tech_plasma_2 }
+  has_technology = tech_plasma_1
+
+ }
+}
+
+gft_trade_can_give_tech_plasma_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_plasma_3
+ FROM = {
+  NOT = { has_technology = tech_plasma_3 }
+  has_technology = tech_plasma_2
+
+ }
+}
+
+gft_trade_can_give_tech_positronic_implants = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_positronic_implants
+ FROM = {
+  NOT = { has_technology = tech_positronic_implants }
+  has_technology = tech_self_aware_logic
+  has_ethic = ethic_gestalt_consciousness
+ }
+}
+
+gft_trade_can_give_tech_power_hub_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_power_hub_1
+ FROM = {
+  NOT = { has_technology = tech_power_hub_1 }
+  has_technology = tech_power_plant_2
+
+ }
+}
+
+gft_trade_can_give_tech_power_hub_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_power_hub_2
+ FROM = {
+  NOT = { has_technology = tech_power_hub_2 }
+  has_technology = tech_power_hub_1
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_power_plant_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_power_plant_2
+ FROM = {
+  NOT = { has_technology = tech_power_plant_2 }
+  has_technology = tech_power_plant_1
+
+ }
+}
+
+gft_trade_can_give_tech_power_plant_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_power_plant_3
+ FROM = {
+  NOT = { has_technology = tech_power_plant_3 }
+  has_technology = tech_power_plant_2
+
+ }
+}
+
+gft_trade_can_give_tech_power_plant_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_power_plant_4
+ FROM = {
+  NOT = { has_technology = tech_power_plant_4 }
+  has_technology = tech_power_plant_3
+
+ }
+}
+
+gft_trade_can_give_tech_powered_exoskeletons = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_powered_exoskeletons
+ FROM = {
+  NOT = { has_technology = tech_powered_exoskeletons }
+  has_technology = tech_basic_industry
+
+ }
+}
+
+gft_trade_can_give_tech_precognition_interface = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_precognition_interface
+ FROM = {
+  NOT = { has_technology = tech_precognition_interface }
+  has_technology = tech_telepathy
+  OR = {
+	has_shroud_dlc = yes
+	NOT = {
+		has_ethic = ethic_gestalt_consciousness
+	}
+}
+ }
+}
+
+gft_trade_can_give_tech_psionic_suppression = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_psionic_suppression
+ FROM = {
+  NOT = { has_technology = tech_psionic_suppression }
+
+  has_shroud_dlc = yes
+has_encountered_psionic_auras = yes
+ }
+}
+
+gft_trade_can_give_tech_psionic_theory = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_psionic_theory
+ FROM = {
+  NOT = { has_technology = tech_psionic_theory }
+
+  OR = {
+	has_shroud_dlc = yes
+	NOT = {
+		has_ethic = ethic_gestalt_consciousness
+	}
+	is_active_resolution = resolution_galacticstudies_extradimensional_experimentation
+	has_relic = r_zro_crystal
+}
+NOT = {
+	has_origin = origin_mindwardens
+}
+ }
+}
+
+gft_trade_can_give_tech_quantum_catapult = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_quantum_catapult
+ FROM = {
+  NOT = { has_technology = tech_quantum_catapult }
+
+  has_overlord_dlc = yes
+OR = {
+	has_technology = tech_mega_engineering
+	has_country_flag = has_quantum_catapult_insight
+	has_origin = origin_star_slingshot
+}
+ }
+}
+
+gft_trade_can_give_tech_quicksand_basin = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_quicksand_basin
+ FROM = {
+  NOT = { has_technology = tech_quicksand_basin }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_rare_crystals = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_rare_crystals
+ FROM = {
+  NOT = { has_technology = tech_rare_crystals }
+  has_technology = tech_basic_industry
+
+ }
+}
+
+gft_trade_can_give_tech_reactor_boosters_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_reactor_boosters_2
+ FROM = {
+  NOT = { has_technology = tech_reactor_boosters_2 }
+  has_technology = tech_fusion_power
+has_technology = tech_reactor_boosters_1
+
+ }
+}
+
+gft_trade_can_give_tech_reactor_boosters_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_reactor_boosters_3
+ FROM = {
+  NOT = { has_technology = tech_reactor_boosters_3 }
+  has_technology = tech_antimatter_power
+has_technology = tech_reactor_boosters_2
+
+ }
+}
+
+gft_trade_can_give_tech_refit_standards = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_refit_standards
+ FROM = {
+  NOT = { has_technology = tech_refit_standards }
+  has_technology = tech_interstellar_fleet_traditions
+
+ }
+}
+
+gft_trade_can_give_tech_regenerative_hull_tissue = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_regenerative_hull_tissue
+ FROM = {
+  NOT = { has_technology = tech_regenerative_hull_tissue }
+
+
+ }
+}
+
+gft_trade_can_give_tech_resort_colonies = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_resort_colonies
+ FROM = {
+  NOT = { has_technology = tech_resort_colonies }
+  has_technology = tech_artificial_moral_codes
+  is_gestalt = no
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_resource_processing_algorithms = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_resource_processing_algorithms
+ FROM = {
+  NOT = { has_technology = tech_resource_processing_algorithms }
+  has_technology = tech_unity_of_purpose
+  is_machine_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_ring_world = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ring_world
+ FROM = {
+  NOT = { has_technology = tech_ring_world }
+  has_technology = tech_mega_engineering
+  is_wilderness_empire = no
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_robomodding = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_robomodding
+ FROM = {
+  NOT = { has_technology = tech_robomodding }
+  has_technology = tech_robotic_workers
+  NOR = {
+	has_ethic = "ethic_gestalt_consciousness"
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_robomodding_m = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_robomodding_m
+ FROM = {
+  NOT = { has_technology = tech_robomodding_m }
+  has_technology = tech_powered_exoskeletons
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+	is_hive_empire_with_machines = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_robomodding_points_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_robomodding_points_1
+ FROM = {
+  NOT = { has_technology = tech_robomodding_points_1 }
+  has_technology = tech_robomodding
+has_technology = tech_droid_workers
+  NOT = {
+	has_ethic = "ethic_gestalt_consciousness"
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_robomodding_points_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_robomodding_points_2
+ FROM = {
+  NOT = { has_technology = tech_robomodding_points_2 }
+  has_technology = tech_robomodding_points_1
+has_technology = tech_synthetic_workers
+  NOT = {
+	has_ethic = "ethic_gestalt_consciousness"
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_robot_assembly_complex = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_robot_assembly_complex
+ FROM = {
+  NOT = { has_technology = tech_robot_assembly_complex }
+  has_technology = tech_robomodding
+has_technology = tech_galactic_administration
+  NOT = {
+	has_ethic = "ethic_gestalt_consciousness"
+}
+ }
+}
+
+gft_trade_can_give_tech_robotic_workers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_robotic_workers
+ FROM = {
+  NOT = { has_technology = tech_robotic_workers }
+  has_technology = tech_powered_exoskeletons
+  NOR = {
+	has_ethic = "ethic_gestalt_consciousness"
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_sapient_ai = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_sapient_ai
+ FROM = {
+  NOT = { has_technology = tech_sapient_ai }
+  has_technology = tech_self_aware_logic
+  NOT = {
+	has_ethic = ethic_gestalt_consciousness
+}
+ }
+}
+
+gft_trade_can_give_tech_science_arkship = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_science_arkship
+ FROM = {
+  NOT = { has_technology = tech_science_arkship }
+  has_technology = tech_sensors_2
+has_technology = tech_arkship_construction
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_science_nexus = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_science_nexus
+ FROM = {
+  NOT = { has_technology = tech_science_nexus }
+  has_technology = tech_mega_engineering
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_selected_lineages = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_selected_lineages
+ FROM = {
+  NOT = { has_technology = tech_selected_lineages }
+  has_technology = tech_vitality_boosters
+  is_machine_empire = no
+ }
+}
+
+gft_trade_can_give_tech_self_assembling_components = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_self_assembling_components
+ FROM = {
+  NOT = { has_technology = tech_self_assembling_components }
+  has_technology = tech_micro_replicators
+  OR = {
+	is_machine_empire = yes
+	is_individual_machine = yes
+	is_hive_empire_with_machines = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_self_aware_logic = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_self_aware_logic
+ FROM = {
+  NOT = { has_technology = tech_self_aware_logic }
+  has_technology = tech_administrative_ai
+
+ }
+}
+
+gft_trade_can_give_tech_sensors_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_sensors_2
+ FROM = {
+  NOT = { has_technology = tech_sensors_2 }
+
+
+ }
+}
+
+gft_trade_can_give_tech_sensors_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_sensors_3
+ FROM = {
+  NOT = { has_technology = tech_sensors_3 }
+  has_technology = tech_sensors_2
+
+ }
+}
+
+gft_trade_can_give_tech_sensors_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_sensors_4
+ FROM = {
+  NOT = { has_technology = tech_sensors_4 }
+  has_technology = tech_sensors_3
+
+ }
+}
+
+gft_trade_can_give_tech_sentry_array = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_sentry_array
+ FROM = {
+  NOT = { has_technology = tech_sentry_array }
+  has_technology = tech_mega_engineering
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_shield_hardeners_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_shield_hardeners_1
+ FROM = {
+  NOT = { has_technology = tech_shield_hardeners_1 }
+  has_technology = tech_shield_rechargers_1
+has_technology = tech_exotic_gases
+
+ }
+}
+
+gft_trade_can_give_tech_shield_hardeners_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_shield_hardeners_2
+ FROM = {
+  NOT = { has_technology = tech_shield_hardeners_2 }
+  has_technology = tech_shield_hardeners_1
+has_technology = tech_mine_zro
+
+ }
+}
+
+gft_trade_can_give_tech_shield_rechargers_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_shield_rechargers_1
+ FROM = {
+  NOT = { has_technology = tech_shield_rechargers_1 }
+  has_technology = tech_shields_3
+
+ }
+}
+
+gft_trade_can_give_tech_shields_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_shields_2
+ FROM = {
+  NOT = { has_technology = tech_shields_2 }
+  has_technology = tech_shields_1
+
+ }
+}
+
+gft_trade_can_give_tech_shields_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_shields_3
+ FROM = {
+  NOT = { has_technology = tech_shields_3 }
+  has_technology = tech_shields_2
+
+ }
+}
+
+gft_trade_can_give_tech_shields_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_shields_4
+ FROM = {
+  NOT = { has_technology = tech_shields_4 }
+  has_technology = tech_shields_3
+
+ }
+}
+
+gft_trade_can_give_tech_shields_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_shields_5
+ FROM = {
+  NOT = { has_technology = tech_shields_5 }
+  has_technology = tech_shields_4
+
+ }
+}
+
+gft_trade_can_give_tech_ship_armor_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_armor_2
+ FROM = {
+  NOT = { has_technology = tech_ship_armor_2 }
+  has_technology = tech_ship_armor_1
+
+ }
+}
+
+gft_trade_can_give_tech_ship_armor_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_armor_3
+ FROM = {
+  NOT = { has_technology = tech_ship_armor_3 }
+  has_technology = tech_ship_armor_2
+
+ }
+}
+
+gft_trade_can_give_tech_ship_armor_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_armor_4
+ FROM = {
+  NOT = { has_technology = tech_ship_armor_4 }
+  has_technology = tech_ship_armor_3
+
+ }
+}
+
+gft_trade_can_give_tech_ship_armor_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_armor_5
+ FROM = {
+  NOT = { has_technology = tech_ship_armor_5 }
+  has_technology = tech_ship_armor_4
+
+ }
+}
+
+gft_trade_can_give_tech_ship_hull_storm_breaker_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_hull_storm_breaker_1
+ FROM = {
+  NOT = { has_technology = tech_ship_hull_storm_breaker_1 }
+  has_technology = tech_storm_prediction_1
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_ship_hull_storm_breaker_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_hull_storm_breaker_2
+ FROM = {
+  NOT = { has_technology = tech_ship_hull_storm_breaker_2 }
+  has_technology = tech_ship_hull_storm_breaker_1
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_ship_storm_weapons_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_storm_weapons_1
+ FROM = {
+  NOT = { has_technology = tech_ship_storm_weapons_1 }
+  has_technology = tech_storm_prediction_1
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_ship_storm_weapons_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_ship_storm_weapons_2
+ FROM = {
+  NOT = { has_technology = tech_ship_storm_weapons_2 }
+  has_technology = tech_ship_storm_weapons_1
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_slave_colonies = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_slave_colonies
+ FROM = {
+  NOT = { has_technology = tech_slave_colonies }
+  has_technology = tech_neural_implants
+  is_gestalt = no
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_society_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_society_1
+ FROM = {
+  NOT = { has_technology = tech_society_1 }
+  has_technology = tech_basic_science_lab_1
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_society_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_society_2
+ FROM = {
+  NOT = { has_technology = tech_society_2 }
+  has_technology = tech_society_1
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_society_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_society_3
+ FROM = {
+  NOT = { has_technology = tech_society_3 }
+  has_technology = tech_society_2
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_space_defense_station_improvement = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_defense_station_improvement
+ FROM = {
+  NOT = { has_technology = tech_space_defense_station_improvement }
+  has_technology = tech_starbase_4
+has_technology = tech_modular_engineering
+
+ }
+}
+
+gft_trade_can_give_tech_space_mining_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_mining_1
+ FROM = {
+  NOT = { has_technology = tech_space_mining_1 }
+  has_technology = tech_space_construction
+
+ }
+}
+
+gft_trade_can_give_tech_space_mining_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_mining_2
+ FROM = {
+  NOT = { has_technology = tech_space_mining_2 }
+  has_technology = tech_space_mining_1
+
+ }
+}
+
+gft_trade_can_give_tech_space_mining_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_mining_3
+ FROM = {
+  NOT = { has_technology = tech_space_mining_3 }
+  has_technology = tech_space_mining_2
+
+ }
+}
+
+gft_trade_can_give_tech_space_mining_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_mining_4
+ FROM = {
+  NOT = { has_technology = tech_space_mining_4 }
+  has_technology = tech_space_mining_3
+
+ }
+}
+
+gft_trade_can_give_tech_space_mining_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_mining_5
+ FROM = {
+  NOT = { has_technology = tech_space_mining_5 }
+  has_technology = tech_space_mining_4
+
+ }
+}
+
+gft_trade_can_give_tech_space_science_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_science_1
+ FROM = {
+  NOT = { has_technology = tech_space_science_1 }
+  has_technology = tech_space_construction
+
+ }
+}
+
+gft_trade_can_give_tech_space_science_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_science_2
+ FROM = {
+  NOT = { has_technology = tech_space_science_2 }
+  has_technology = tech_space_science_1
+
+ }
+}
+
+gft_trade_can_give_tech_space_science_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_science_3
+ FROM = {
+  NOT = { has_technology = tech_space_science_3 }
+  has_technology = tech_space_science_2
+
+ }
+}
+
+gft_trade_can_give_tech_space_science_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_science_4
+ FROM = {
+  NOT = { has_technology = tech_space_science_4 }
+  has_technology = tech_space_science_3
+
+ }
+}
+
+gft_trade_can_give_tech_space_science_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_science_5
+ FROM = {
+  NOT = { has_technology = tech_space_science_5 }
+  has_technology = tech_space_science_4
+
+ }
+}
+
+gft_trade_can_give_tech_space_trading = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_space_trading
+ FROM = {
+  NOT = { has_technology = tech_space_trading }
+  has_technology = tech_interplanetary_commerce
+  is_regular_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_starbase_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_starbase_3
+ FROM = {
+  NOT = { has_technology = tech_starbase_3 }
+  has_technology = tech_starbase_2
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_starbase_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_starbase_4
+ FROM = {
+  NOT = { has_technology = tech_starbase_4 }
+  has_technology = tech_starbase_3
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_starbase_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_starbase_5
+ FROM = {
+  NOT = { has_technology = tech_starbase_5 }
+  has_technology = tech_starbase_4
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_starfire_cannon = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_starfire_cannon
+ FROM = {
+  NOT = { has_technology = tech_starfire_cannon }
+
+  has_origin = origin_red_giant
+has_country_flag = starfire_cannon_unlocked
+ }
+}
+
+gft_trade_can_give_tech_stinger_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_stinger_build_speed
+ FROM = {
+  NOT = { has_technology = tech_stinger_build_speed }
+  has_technology = tech_stingers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_stinger_growth_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_stinger_growth_1
+ FROM = {
+  NOT = { has_technology = tech_stinger_growth_1 }
+  has_technology = tech_stingers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_stinger_growth_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_stinger_growth_2
+ FROM = {
+  NOT = { has_technology = tech_stinger_growth_2 }
+  has_technology = tech_stinger_growth_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_stingers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_stingers
+ FROM = {
+  NOT = { has_technology = tech_stingers }
+  has_technology = tech_harbingers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_storm_manipulation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_storm_manipulation
+ FROM = {
+  NOT = { has_technology = tech_storm_manipulation }
+  has_technology = tech_industrial_storm_protection
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_storm_prediction_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_storm_prediction_1
+ FROM = {
+  NOT = { has_technology = tech_storm_prediction_1 }
+  has_technology = tech_industrial_storm_protection
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_storm_prediction_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_storm_prediction_2
+ FROM = {
+  NOT = { has_technology = tech_storm_prediction_2 }
+  has_technology = tech_storm_prediction_1
+  has_cosmic_storms_dlc = yes
+ }
+}
+
+gft_trade_can_give_tech_strategic_coordination = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_strategic_coordination
+ FROM = {
+  NOT = { has_technology = tech_strategic_coordination }
+  has_technology = tech_mega_engineering
+  has_megacorp = yes
+is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_strike_craft_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_strike_craft_1
+ FROM = {
+  NOT = { has_technology = tech_strike_craft_1 }
+
+
+ }
+}
+
+gft_trade_can_give_tech_strike_craft_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_strike_craft_2
+ FROM = {
+  NOT = { has_technology = tech_strike_craft_2 }
+  has_technology = tech_strike_craft_1
+
+ }
+}
+
+gft_trade_can_give_tech_strike_craft_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_strike_craft_3
+ FROM = {
+  NOT = { has_technology = tech_strike_craft_3 }
+  has_technology = tech_strike_craft_2
+
+ }
+}
+
+gft_trade_can_give_tech_subdermal_stimulation = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_subdermal_stimulation
+ FROM = {
+  NOT = { has_technology = tech_subdermal_stimulation }
+  has_technology = tech_genome_mapping
+  NOR = {
+	has_ethic = ethic_gestalt_consciousness
+	has_civic = civic_dystopian_society
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_swarmer_missiles_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_swarmer_missiles_1
+ FROM = {
+  NOT = { has_technology = tech_swarmer_missiles_1 }
+  OR = {
+	has_technology = tech_harbingers
+	has_technology = tech_stingers
+	has_technology = tech_missiles_2
+}
+
+ }
+}
+
+gft_trade_can_give_tech_swarmer_missiles_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_swarmer_missiles_2
+ FROM = {
+  NOT = { has_technology = tech_swarmer_missiles_2 }
+  has_technology = tech_swarmer_missiles_1
+
+ }
+}
+
+gft_trade_can_give_tech_synchronized_defences = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_synchronized_defences
+ FROM = {
+  NOT = { has_technology = tech_synchronized_defences }
+  has_technology = tech_self_aware_logic
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_synth_queen_knowledge = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_synth_queen_knowledge
+ FROM = {
+  NOT = { has_technology = tech_synth_queen_knowledge }
+
+  has_machine_age_dlc = yes
+has_country_flag = synth_queen_knowledge
+ }
+}
+
+gft_trade_can_give_tech_synthetic_leaders = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_synthetic_leaders
+ FROM = {
+  NOT = { has_technology = tech_synthetic_leaders }
+  has_technology = tech_synthetic_workers
+  NOR = {
+	has_ethic = "ethic_gestalt_consciousness"
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_synthetic_thought_patterns = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_synthetic_thought_patterns
+ FROM = {
+  NOT = { has_technology = tech_synthetic_thought_patterns }
+  has_technology = tech_artificial_moral_codes
+  is_gestalt = no
+ }
+}
+
+gft_trade_can_give_tech_synthetic_workers = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_synthetic_workers
+ FROM = {
+  NOT = { has_technology = tech_synthetic_workers }
+  has_technology = tech_droid_workers
+has_technology = tech_galactic_administration
+has_technology = tech_sapient_ai
+  NOR = {
+	has_ethic = "ethic_gestalt_consciousness"
+	is_individual_machine = yes
+}
+ }
+}
+
+gft_trade_can_give_tech_telepathy = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_telepathy
+ FROM = {
+  NOT = { has_technology = tech_telepathy }
+  has_technology = tech_psionic_theory
+  OR = {
+	has_shroud_dlc = yes
+	NOT = {
+		has_ethic = ethic_gestalt_consciousness
+	}
+}
+ }
+}
+
+gft_trade_can_give_tech_terrestrial_sculpting = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_terrestrial_sculpting
+ FROM = {
+  NOT = { has_technology = tech_terrestrial_sculpting }
+  OR = {
+	has_technology = tech_colonization_1
+	has_technology = tech_planetary_engineering
+}
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_thought_enforcement = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_thought_enforcement
+ FROM = {
+  NOT = { has_technology = tech_thought_enforcement }
+  has_technology = tech_telepathy
+  OR = {
+	has_shroud_dlc = yes
+	NOT = {
+		has_ethic = ethic_gestalt_consciousness
+	}
+}
+ }
+}
+
+gft_trade_can_give_tech_thrusters_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_thrusters_2
+ FROM = {
+  NOT = { has_technology = tech_thrusters_2 }
+  has_technology = tech_thrusters_1
+
+ }
+}
+
+gft_trade_can_give_tech_thrusters_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_thrusters_3
+ FROM = {
+  NOT = { has_technology = tech_thrusters_3 }
+  has_technology = tech_thrusters_2
+
+ }
+}
+
+gft_trade_can_give_tech_thrusters_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_thrusters_4
+ FROM = {
+  NOT = { has_technology = tech_thrusters_4 }
+  has_technology = tech_thrusters_3
+
+ }
+}
+
+gft_trade_can_give_tech_titan_hull_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_titan_hull_1
+ FROM = {
+  NOT = { has_technology = tech_titan_hull_1 }
+  has_technology = tech_titans
+
+ }
+}
+
+gft_trade_can_give_tech_titan_hull_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_titan_hull_2
+ FROM = {
+  NOT = { has_technology = tech_titan_hull_2 }
+  has_technology = tech_titan_hull_1
+
+ }
+}
+
+gft_trade_can_give_tech_titans = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_titans
+ FROM = {
+  NOT = { has_technology = tech_titans }
+  OR = {
+	has_technology = tech_battleships
+	has_technology = tech_stinger_growth_2
+}
+  host_has_dlc = "Apocalypse"
+ }
+}
+
+gft_trade_can_give_tech_tomb_world_adaption = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_tomb_world_adaption
+ FROM = {
+  NOT = { has_technology = tech_tomb_world_adaption }
+  has_technology = tech_colonization_3
+  is_wilderness_empire = no
+ }
+}
+
+gft_trade_can_give_tech_torpedoes_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_torpedoes_1
+ FROM = {
+  NOT = { has_technology = tech_torpedoes_1 }
+  has_technology = tech_corvettes
+  OR = {
+	country_uses_bio_ships = no
+	has_tradition = tr_nanotech_4
+	has_crisis_level = crisis_level_2
+	has_technology = tech_cosmogenesis_escort
+}
+ }
+}
+
+gft_trade_can_give_tech_torpedoes_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_torpedoes_2
+ FROM = {
+  NOT = { has_technology = tech_torpedoes_2 }
+  has_technology = tech_torpedoes_1
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_torpedoes_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_torpedoes_3
+ FROM = {
+  NOT = { has_technology = tech_torpedoes_3 }
+  has_technology = tech_torpedoes_2
+  country_uses_bio_ships = no
+ }
+}
+
+gft_trade_can_give_tech_toxic_kelp = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_toxic_kelp
+ FROM = {
+  NOT = { has_technology = tech_toxic_kelp }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_tracking_implants = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_tracking_implants
+ FROM = {
+  NOT = { has_technology = tech_tracking_implants }
+  has_technology = tech_subdermal_stimulation
+has_technology = tech_galactic_bureaucracy
+
+ }
+}
+
+gft_trade_can_give_tech_transcendent_faith = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_transcendent_faith
+ FROM = {
+  NOT = { has_technology = tech_transcendent_faith }
+  has_technology = tech_consecration_fields
+has_technology = tech_galactic_administration
+  OR = {
+	is_spiritualist = yes
+	AND = {
+		is_gestalt = no
+		has_make_spiritualist_perk = yes
+	}
+}
+ }
+}
+
+gft_trade_can_give_tech_unity_of_purpose = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_unity_of_purpose
+ FROM = {
+  NOT = { has_technology = tech_unity_of_purpose }
+
+  is_gestalt = yes
+ }
+}
+
+gft_trade_can_give_tech_vitality_boosters = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_vitality_boosters
+ FROM = {
+  NOT = { has_technology = tech_vitality_boosters }
+  has_technology = tech_genome_mapping
+  OR = {
+	is_machine_empire = no
+	has_civic = civic_machine_assimilator
+}
+ }
+}
+
+gft_trade_can_give_tech_volatile_motes = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_volatile_motes
+ FROM = {
+  NOT = { has_technology = tech_volatile_motes }
+  has_technology = tech_basic_industry
+
+ }
+}
+
+gft_trade_can_give_tech_volcanic_forge = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_volcanic_forge
+ FROM = {
+  NOT = { has_technology = tech_volcanic_forge }
+
+  is_world_forger_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_volcanic_terraforming = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_volcanic_terraforming
+ FROM = {
+  NOT = { has_technology = tech_volcanic_terraforming }
+  has_technology = tech_terrestrial_sculpting
+has_technology = tech_volcano
+  has_infernals = yes
+ }
+}
+
+gft_trade_can_give_tech_volcano = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_volcano
+ FROM = {
+  NOT = { has_technology = tech_volcano }
+  has_technology = tech_colonization_1
+  is_nomadic = no
+ }
+}
+
+gft_trade_can_give_tech_waystation_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_waystation_2
+ FROM = {
+  NOT = { has_technology = tech_waystation_2 }
+  has_technology = tech_waystation_1
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_waystation_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_waystation_3
+ FROM = {
+  NOT = { has_technology = tech_waystation_3 }
+  has_technology = tech_waystation_2
+  is_nomadic = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_evasion_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_evasion_2
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_evasion_2 }
+  has_technology = tech_weaver_bio_anti_evasion_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_evasion_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_evasion_3
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_evasion_3 }
+  has_technology = tech_weaver_bio_anti_evasion_2
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_evasion_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_evasion_4
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_evasion_4 }
+  has_technology = tech_weaver_bio_anti_evasion_3
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_evasion_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_evasion_5
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_evasion_5 }
+  has_technology = tech_weaver_bio_anti_evasion_4
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_fire_rate_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_fire_rate_1
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_fire_rate_1 }
+  has_technology = tech_weavers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_fire_rate_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_fire_rate_2
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_fire_rate_2 }
+  has_technology = tech_weaver_bio_anti_fire_rate_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_fire_rate_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_fire_rate_3
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_fire_rate_3 }
+  has_technology = tech_weaver_bio_anti_fire_rate_2
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_fire_rate_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_fire_rate_4
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_fire_rate_4 }
+  has_technology = tech_weaver_bio_anti_fire_rate_3
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_anti_fire_rate_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_anti_fire_rate_5
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_anti_fire_rate_5 }
+  has_technology = tech_weaver_bio_anti_fire_rate_4
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_confuser_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_confuser_1
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_confuser_1 }
+  has_technology = tech_weavers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_confuser_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_confuser_2
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_confuser_2 }
+  has_technology = tech_weaver_bio_confuser_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_confuser_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_confuser_3
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_confuser_3 }
+  has_technology = tech_weaver_bio_confuser_2
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_confuser_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_confuser_4
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_confuser_4 }
+  has_technology = tech_weaver_bio_confuser_3
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_confuser_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_confuser_5
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_confuser_5 }
+  has_technology = tech_weaver_bio_confuser_4
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_evasion_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_evasion_2
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_evasion_2 }
+  has_technology = tech_weaver_bio_evasion_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_evasion_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_evasion_3
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_evasion_3 }
+  has_technology = tech_weaver_bio_evasion_2
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_evasion_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_evasion_4
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_evasion_4 }
+  has_technology = tech_weaver_bio_evasion_3
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_evasion_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_evasion_5
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_evasion_5 }
+  has_technology = tech_weaver_bio_evasion_4
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_fire_rate_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_fire_rate_1
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_fire_rate_1 }
+  has_technology = tech_weavers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_fire_rate_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_fire_rate_2
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_fire_rate_2 }
+  has_technology = tech_weaver_bio_fire_rate_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_fire_rate_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_fire_rate_3
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_fire_rate_3 }
+  has_technology = tech_weaver_bio_fire_rate_2
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_fire_rate_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_fire_rate_4
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_fire_rate_4 }
+  has_technology = tech_weaver_bio_fire_rate_3
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_fire_rate_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_fire_rate_5
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_fire_rate_5 }
+  has_technology = tech_weaver_bio_fire_rate_4
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_healing_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_healing_1
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_healing_1 }
+  has_technology = tech_weavers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_healing_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_healing_2
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_healing_2 }
+  has_technology = tech_weaver_bio_healing_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_healing_3 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_healing_3
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_healing_3 }
+  has_technology = tech_weaver_bio_healing_2
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_healing_4 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_healing_4
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_healing_4 }
+  has_technology = tech_weaver_bio_healing_3
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_bio_healing_5 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_bio_healing_5
+ FROM = {
+  NOT = { has_technology = tech_weaver_bio_healing_5 }
+  has_technology = tech_weaver_bio_healing_4
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_build_speed = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_build_speed
+ FROM = {
+  NOT = { has_technology = tech_weaver_build_speed }
+  has_technology = tech_weavers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_growth_1 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_growth_1
+ FROM = {
+  NOT = { has_technology = tech_weaver_growth_1 }
+  has_technology = tech_weavers
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_weaver_growth_2 = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_weaver_growth_2
+ FROM = {
+  NOT = { has_technology = tech_weaver_growth_2 }
+  has_technology = tech_weaver_growth_1
+  country_uses_bio_ships = yes
+ }
+}
+
+gft_trade_can_give_tech_wilderness_cluster = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_wilderness_cluster
+ FROM = {
+  NOT = { has_technology = tech_wilderness_cluster }
+  has_technology = tech_wilderness_node
+
+ }
+}
+
+gft_trade_can_give_tech_wilderness_confluence = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_wilderness_confluence
+ FROM = {
+  NOT = { has_technology = tech_wilderness_confluence }
+  has_technology = tech_wilderness_cluster
+has_technology = tech_colonial_centralization
+
+ }
+}
+
+gft_trade_can_give_tech_wormhole_stabilization = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_wormhole_stabilization
+ FROM = {
+  NOT = { has_technology = tech_wormhole_stabilization }
+  has_technology = tech_hyper_drive_2
+
+ }
+}
+
+gft_trade_can_give_tech_xeno_diplomacy = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_xeno_diplomacy
+ FROM = {
+  NOT = { has_technology = tech_xeno_diplomacy }
+  has_technology = tech_federation_code
+  is_regular_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_xeno_relations = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_xeno_relations
+ FROM = {
+  NOT = { has_technology = tech_xeno_relations }
+  has_technology = tech_xeno_diplomacy
+has_technology = tech_galactic_administration
+  is_regular_empire = yes
+ }
+}
+
+gft_trade_can_give_tech_xeno_tourism_agency = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_xeno_tourism_agency
+ FROM = {
+  NOT = { has_technology = tech_xeno_tourism_agency }
+
+  is_megacorp = yes
+ }
+}
+
+gft_trade_can_give_tech_zero_point_power = {
+ gft_trade_partners_valid = yes
+ has_technology = tech_zero_point_power
+ FROM = {
+  NOT = { has_technology = tech_zero_point_power }
+  has_technology = tech_antimatter_power
+
+ }
+}

@@ -1,9 +1,3 @@
-gft_technology_trade_options_menu = {
- length = 0
- icon = "GFX_edict_type_policy"
- potential = { is_ai = no is_country_type = default }
- effect = { hidden_effect = { country_event = { id = gft_tech_trade.1 } } }
-}
 gft_fleet_trade_options_menu = {
  length = 0
  icon = "GFX_edict_type_policy"

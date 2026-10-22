@@ -71,7 +71,22 @@ TEXT = {
 }
 
 def main():
+    import json
+    from generate import ROOT
+    catalog = json.loads((ROOT/'docs/technology_catalog.json').read_text(encoding='utf-8'))
     for lang, values in TEXT.items():
+        values['gft_trade_technology_invalid'] = {
+          'english':'The giver must still own this technology. The recipient must lack it and meet its prerequisites and eligibility conditions.',
+          'japanese':'送付国が技術を保有し、受領国が未保有で、前提技術と受領条件を満たす必要があります。',
+          'simp_chinese':'赠送方必须掌握该科技，接收方必须未掌握且满足前置科技与接收条件。'
+        }[lang]
+        for row in catalog['included']:
+            values[row['trade_action']] = '$'+row['id']+'$'
+            values[row['trade_action']+'_desc'] = {
+              'english':'Transfer this technology immediately when this trade deal is accepted. Resources and other trade items may be included in the same proposal.',
+              'japanese':'取引成立時にこの技術を即時に付与します。同じ提案に資源などの取引項目を組み合わせられます。',
+              'simp_chinese':'交易被接受时立即转让此科技。可在同一提议中组合资源等其他交易项目。'
+            }[lang]
         for i in range(1,14): values[f'gft_country_{i}'] = f'[gft_country_{i}.GetName]'
         for i in range(1,11): values[f'gft_fleet_slot_{i}'] = f'[gft_fleet_slot_{i}.GetName]'
         area_names = {

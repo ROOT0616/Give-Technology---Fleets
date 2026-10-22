@@ -1,5 +1,17 @@
 # 4.5.2互換性・重複調査
 
+## beta.2追記：交易画面への移行
+
+前回調査では`common/tradable_actions`の確認が不足していた。同ディレクトリの`00_README.txt`には「資源等と並べて取引へ追加する行」を定義できること、全条件と成立時effectでROOT=送付国、FROM=受領国となることが明記されている。`00_tradable_actions.txt`にも`trade_action_share_empire_data`や`trade_action_bulwark_technology`などの実定義がある。
+
+beta.2では、この仕組みにより467技術を通常の交易項目として実装した。`fire_and_forget = yes`、`potential`、`possible`、`on_traded_effect`、`ai_weight`は提供Vanillaの文書・実定義を根拠とする。技術の布告入口は撤去し、イベントやglobal targetを介さず受領国に付与する。技術の対価は通常の同一取引提案で指定できる設計だが、UI・価格・同時交換の実機動作は未確認。
+
+一方、カスタム取引の文書には選択済みfleetやdeal IDの引き渡しがない。標準の「Borrow Fleet」欄はengineが処理する。`on_fleet_contract_started`はfleetをROOT、借用国をFROM、所有国をFROMFROMに渡すが、契約との一意な対応が得られず、同じ相手との別契約まで恒久化する実装は採用しない。成立後の別メニューで艦隊を選ぶ方式も、契約時に対象を確定できないため、現時点では追加しない。**艦隊の交易画面への移行は未完了。** 既存の布告方式を維持する。
+
+GUI override・Vanilla定義override・replace_pathは引き続きない。以下は主にbeta.1時点の調査記録で、操作方法と現行仕様はREADMEを優先する。
+
+ユーザーの追加指定により、艦隊は「成立前の対象指定」が必須。成立後に選択する代替案は採用しない。現在の公開script接続で不可能と断定したのではなく、安全な実装方法を確認できていない状態として残す。
+
 調査日：2026-10-23。更新元：[ROOT0616/Give-Technology---Fleets](https://github.com/ROOT0616/Give-Technology---Fleets)、`master`の`2fe572643cd229df1d85b184bec0262f581b75f6`（2.0.1 / 3.7.*）。引き継ぎ先の旧チャットには依頼文以外の調査結果・添付はありませんでした。
 
 ## 対象版の根拠
