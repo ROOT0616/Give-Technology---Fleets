@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "kind": "static only; not a Stellaris engine run",
+  "target": "4.5.2",
+  "version": "3.0.0-beta.1",
+  "technology_definitions": 678,
+  "gift_technologies": 467,
+  "excluded_technologies": 211,
+  "events": 522,
+  "reachable_events": 522,
+  "scripted_triggers": 469,
+  "languages": {
+    "l_english": 63,
+    "l_japanese": 63,
+    "l_simp_chinese": 63
+  },
+  "vanilla_overrides": [],
+  "errors": []
+}

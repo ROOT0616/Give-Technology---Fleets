@@ -1,0 +1,3488 @@
+{
+  "target": "4.5.2",
+  "version": "3.0.0-beta.1",
+  "included": [
+    {
+      "id": "tech_adaptive_bureaucracy",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20000",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_adaptive_combat_algorithms",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20001",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_administrative_ai",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20002",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_advanced_industrial_storm_protection",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20003",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_advanced_metallurgy_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20004",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_advanced_metallurgy_2",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20005",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_advanced_storm_manipulation",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20006",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_afterburners_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20007",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_afterburners_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20008",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_alien_cloning",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20009",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_alien_life_studies",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20010",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_alloys_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20011",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_alloys_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20012",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_antimatter_power",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20013",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_arc_emitter_1",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20014",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_arc_emitter_2",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20015",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_arcane_deciphering",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20016",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_detection_scrambler",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20017",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_lasers",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20018",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_mass_accelerator",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20019",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_mass_drivers",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20020",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_missiles",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20021",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_overcharger",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20022",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_pk_devolving_beam",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20023",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_point_defence",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20024",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_rampart",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20025",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_refinery",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20026",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_strike_crafts",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20027",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeo_titan_beam",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20028",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeoarmor",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20029",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeoshield",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20030",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archaeostudies",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20031",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_archeology_lab",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20032",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_archeology_lab_ancrel",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20033",
+      "source": "common/technology/00_ancient_relics_tech.txt"
+    },
+    {
+      "id": "tech_arkship_construction",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20034",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_arkship_exodus_jump",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20035",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_arkship_planetary_refinery",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20036",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_arkship_stellar_igniter",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20037",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_arkship_system_scanner",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20038",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_arkship_tier_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20039",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_arkship_tier_3",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20040",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_armor_hardeners_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20041",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_armor_hardeners_2",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20042",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_artificial_moral_codes",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20043",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_ascension_theory",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20044",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_assembly_pattern",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20045",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_assisted_detection",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20046",
+      "source": "common/technology/00_first_contact_tech.txt"
+    },
+    {
+      "id": "tech_astral_harvesting",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20047",
+      "source": "common/technology/00_astral_planes_tech.txt"
+    },
+    {
+      "id": "tech_autocannons_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20048",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_autocannons_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20049",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_autocannons_3",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20050",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_autocurating_vault",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20051",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_automated_exploration",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20052",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_autonomous_agents",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20053",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_auxiliary_fire_control",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20054",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_basic_science_lab_2",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20055",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_basic_science_lab_3",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20056",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_battleship_build_speed",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20057",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_battleship_hull_1",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20058",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_battleship_hull_2",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20059",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_battleships",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20060",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_binary_motivators",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20061",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_bio_reactor",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20062",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_bio_reactor_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20063",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_biomechanics",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20064",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_btc_1",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20065",
+      "source": "common/technology/00_apocalypse_tech.txt"
+    },
+    {
+      "id": "tech_capacity_boosters",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20066",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_capital_productivity_1",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20067",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_capital_productivity_2",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20068",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_capital_productivity_3",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20069",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_centralized_command",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20070",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_civilian_arkship",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20071",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_climate_restoration",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20072",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_cloaking_1",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20073",
+      "source": "common/technology/00_first_contact_tech.txt"
+    },
+    {
+      "id": "tech_cloaking_2",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20074",
+      "source": "common/technology/00_first_contact_tech.txt"
+    },
+    {
+      "id": "tech_cloaking_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20075",
+      "source": "common/technology/00_first_contact_tech.txt"
+    },
+    {
+      "id": "tech_cloaking_psi",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20076",
+      "source": "common/technology/00_first_contact_tech.txt"
+    },
+    {
+      "id": "tech_cloning",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20077",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_cold_fusion_power",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20078",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_collective_production_methods",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20079",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_collective_self",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20080",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_colonial_bureaucracy",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20081",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_colonial_centralization",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20082",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_colonization_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20083",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_colonization_3",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20084",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_colonization_4",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20085",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_colonization_5",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20086",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_combat_computers_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20087",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_combat_computers_2",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20088",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_combat_computers_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20089",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_combat_computers_autonomous",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20090",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_combat_training",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20091",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_command_matrix",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20092",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_consecration_fields",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20093",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_construction_templates",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20094",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_consumer_good_refinement_1",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20095",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_consumer_good_refinement_2",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20096",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_controlled_mutations",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20097",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_controlled_mutations_2",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20098",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_corvette_build_speed",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20099",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_corvette_hull_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20100",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_corvette_hull_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20101",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_cruiser_build_speed",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20102",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_cruiser_hull_1",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20103",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_cruiser_hull_2",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20104",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_cruisers",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20105",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_cryostasis_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20106",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_cryostasis_2",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20107",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_cultural_heritage",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20108",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_curator_lab",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20109",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_dangerous_wildlife",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20110",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_dark_matter_detection",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20111",
+      "source": "common/technology/00_first_contact_tech.txt"
+    },
+    {
+      "id": "tech_decryption_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20112",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_decryption_2",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20113",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_decryption_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20114",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_deep_sinkhole",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20115",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_deep_space_citadel",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20116",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_defense_platform_hull_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20117",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_dense_jungle",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20118",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_destroyer_build_speed",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20119",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_destroyer_hull_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20120",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_destroyer_hull_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20121",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_destroyers",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20122",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_detection_array",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20123",
+      "source": "common/technology/00_first_contact_tech.txt"
+    },
+    {
+      "id": "tech_disruptors_1",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20124",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_disruptors_2",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20125",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_disruptors_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20126",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_fleet_size_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20127",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_fleet_size_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20128",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_fleet_size_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20129",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_fleet_size_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20130",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_fleet_size_5",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20131",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_navy_size_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20132",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_navy_size_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20133",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_navy_size_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20134",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_doctrine_navy_size_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20135",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_droid_workers",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20136",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_dyson_sphere",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20137",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_eco_simulation",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20138",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_ecological_adaptation",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20139",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_effective_bureaucracy",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20140",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_embodied_dynamism",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20141",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_encryption_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20142",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_encryption_2",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20143",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_encryption_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20144",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_energy_lance_1",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20145",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_energy_lance_2",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20146",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_energy_torpedoes_1",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20147",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_energy_torpedoes_2",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20148",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_engineering_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20149",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_engineering_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20150",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_engineering_3",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20151",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_epigenetic_triggers",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20152",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_executive_retreat",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20153",
+      "source": "common/technology/00_megacorp_tech.txt"
+    },
+    {
+      "id": "tech_existential_campaigns",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20154",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_exotic_gases",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20155",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_experimental_subspace_navigation",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20156",
+      "source": "common/technology/00_distant_stars_tech.txt"
+    },
+    {
+      "id": "tech_federation_code",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20157",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_flak_batteries_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20158",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_flak_batteries_3",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20159",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_food_processing_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20160",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_food_processing_2",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20161",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_frontier_health",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20162",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_frontier_hospital",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20163",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_ftl_inhibitor",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20164",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_fusion_power",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20165",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_galactic_administration",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20166",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_galactic_ambitions",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20167",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_galactic_archivism",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20168",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_galactic_bureaucracy",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20169",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_galactic_campaigns",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20170",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_galactic_markets",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20171",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_gateway_activation",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20172",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_gateway_construction",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20173",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_gene_banks",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20174",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_gene_crops",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20175",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_gene_expressions",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20176",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_gene_seed_purification",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20177",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_gene_tailoring",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20178",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_genome_mapping",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20179",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_glandular_acclimation",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20180",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_global_defense_grid",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20181",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_global_production_strategy",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20182",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_global_research_initiative",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20183",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_gravity_snare_capacity_1",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20184",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_gravity_snare_capacity_2",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20185",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_gravity_snare_capacity_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20186",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_gravity_wells",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20187",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_ground_defense_planning",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20188",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_growth_chamber_1",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20189",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_growth_chamber_2",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20190",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_habitat_1",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20191",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_habitat_2",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20192",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_habitat_3",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20193",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_harbinger_build_speed",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20194",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_harbinger_growth_1",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20195",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_harbinger_growth_2",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20196",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_harbingers",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20197",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_heritage_site",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20198",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_hive_cluster",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20199",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_hive_confluence",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20200",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_holographic_rituals",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20201",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_housing_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20202",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_housing_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20203",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_housing_agrarian_idyll",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20204",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_hyper_drive_2",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20205",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_hyper_drive_3",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20206",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_hyper_entertainment_forum",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20207",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_hyper_relays",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20208",
+      "source": "common/technology/00_overlord_tech.txt"
+    },
+    {
+      "id": "tech_hypercomms_forum",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20209",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_identity_fusion",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20210",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_identity_initialization",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20211",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_improved_incubators",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20212",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_industrial_storm_protection",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20213",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_integrated_cybernetics",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20214",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_interstellar_assembly",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20215",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_interstellar_campaigns",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20216",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_interstellar_economics",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20217",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_interstellar_fleet_traditions",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20218",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_juggernaut",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20219",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_jump_drive_1",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20220",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_kinetic_artillery_1",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20221",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_kinetic_artillery_2",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20222",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_lasers_2",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20223",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_lasers_3",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20224",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_lasers_4",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20225",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_lasers_5",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20226",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_lathe_cogitator",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20227",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_lathe_life_support",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20228",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_lathe_overclocker",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20229",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_lathe_preserver",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20230",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_lathe_resonator",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20231",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_lathe_validator",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20232",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_leviathan_techgenesis",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20233",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_living_state",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20234",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_luxuries_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20235",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_luxuries_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20236",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_mandibles_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20237",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_mandibles_3",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20238",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_manifest_destiny",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20239",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_mass_accelerator_1",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20240",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_mass_accelerator_2",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20241",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_mass_drivers_2",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20242",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_mass_drivers_3",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20243",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_mass_drivers_4",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20244",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_mass_drivers_5",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20245",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_massive_glacier",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20246",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_matter_decompressor",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20247",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_mauler_build_speed",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20248",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_mauler_growth_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20249",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_mauler_growth_2",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20250",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_mega_art",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20251",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_mega_assembly",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20252",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_mega_engineering",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20253",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_mega_shipyard",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20254",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_metabolic_gases",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20255",
+      "source": "common/technology/00_grand_archive_tech.txt"
+    },
+    {
+      "id": "tech_micro_replicators",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20256",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_military_arkship",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20257",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_mine_betharian",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20258",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_mine_dark_matter",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20259",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_mine_exotic_gases",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20260",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_mine_living_metal",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20261",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_mine_rare_crystals",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20262",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_mine_volatile_motes",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20263",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_mine_zro",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20264",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_mineral_purification_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20265",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_mineral_purification_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20266",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_mining_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20267",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_mining_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20268",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_mining_3",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20269",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_missiles_2",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20270",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_missiles_3",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20271",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_missiles_4",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20272",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_missiles_5",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20273",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_modular_engineering",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20274",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_morphogenetic_field_mastery",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20275",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_mountain_range",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20276",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_nanite_assemblers",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20277",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_nanite_autocannon",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20278",
+      "source": "common/technology/00_distant_stars_tech.txt"
+    },
+    {
+      "id": "tech_nanite_flak_batteries",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20279",
+      "source": "common/technology/00_distant_stars_tech.txt"
+    },
+    {
+      "id": "tech_nanite_repair_system",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20280",
+      "source": "common/technology/00_distant_stars_tech.txt"
+    },
+    {
+      "id": "tech_nanite_transmutation",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20281",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_nano_vitality_crops",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20282",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_neural_implants",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20283",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_neuro_quantum_links",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20284",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_node_culling_1",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20285",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_node_culling_2",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20286",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_node_culling_3",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20287",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_node_reformatting_1",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20288",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_node_reformatting_2",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20289",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_node_reformatting_3",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20290",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_noxious_swamp",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20291",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_nutrient_replication",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20292",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_orbital_ring_tier_1",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20293",
+      "source": "common/technology/00_overlord_tech.txt"
+    },
+    {
+      "id": "tech_paradise_dome",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20294",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_pd_tracking_2",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20295",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_pd_tracking_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20296",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_penal_colonies",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20297",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_physics_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20298",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_physics_2",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20299",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_physics_3",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20300",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_pk_cracker",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20301",
+      "source": "common/technology/00_apocalypse_tech.txt"
+    },
+    {
+      "id": "tech_pk_godray",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20302",
+      "source": "common/technology/00_apocalypse_tech.txt"
+    },
+    {
+      "id": "tech_pk_nanobots",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20303",
+      "source": "common/technology/00_apocalypse_tech.txt"
+    },
+    {
+      "id": "tech_pk_neutron",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20304",
+      "source": "common/technology/00_apocalypse_tech.txt"
+    },
+    {
+      "id": "tech_pk_shielder",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20305",
+      "source": "common/technology/00_apocalypse_tech.txt"
+    },
+    {
+      "id": "tech_pk_smelter",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20306",
+      "source": "common/technology/00_apocalypse_tech.txt"
+    },
+    {
+      "id": "tech_planetary_engineering",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20307",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_planetary_infrastructure_1",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20308",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_planetary_infrastructure_2",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20309",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_planetary_shield_generator",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20310",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_planetary_unification",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20311",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_plasma_1",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20312",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_plasma_2",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20313",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_plasma_3",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20314",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_positronic_implants",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20315",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_power_hub_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20316",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_power_hub_2",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20317",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_power_plant_2",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20318",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_power_plant_3",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20319",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_power_plant_4",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20320",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_powered_exoskeletons",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20321",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_precognition_interface",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20322",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_psionic_suppression",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20323",
+      "source": "common/technology/00_shroud_tech.txt"
+    },
+    {
+      "id": "tech_psionic_theory",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20324",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_quantum_catapult",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20325",
+      "source": "common/technology/00_overlord_tech.txt"
+    },
+    {
+      "id": "tech_quicksand_basin",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20326",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_rare_crystals",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20327",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_reactor_boosters_2",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20328",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_reactor_boosters_3",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20329",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_refit_standards",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20330",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_regenerative_hull_tissue",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20331",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_resort_colonies",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20332",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_resource_processing_algorithms",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20333",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_ring_world",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20334",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_robomodding",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20335",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_robomodding_m",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20336",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_robomodding_points_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20337",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_robomodding_points_2",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20338",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_robot_assembly_complex",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20339",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_robotic_workers",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20340",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_sapient_ai",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20341",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_science_arkship",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20342",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_science_nexus",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20343",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_selected_lineages",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20344",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_self_assembling_components",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20345",
+      "source": "common/technology/00_synthetic_dawn_tech.txt"
+    },
+    {
+      "id": "tech_self_aware_logic",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20346",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_sensors_2",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20347",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_sensors_3",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20348",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_sensors_4",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20349",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_sentry_array",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20350",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_shield_hardeners_1",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20351",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_shield_hardeners_2",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20352",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_shield_rechargers_1",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20353",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_shields_2",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20354",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_shields_3",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20355",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_shields_4",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20356",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_shields_5",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20357",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_ship_armor_2",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20358",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_ship_armor_3",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20359",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_ship_armor_4",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20360",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_ship_armor_5",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20361",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_ship_hull_storm_breaker_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20362",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_ship_hull_storm_breaker_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20363",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_ship_storm_weapons_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20364",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_ship_storm_weapons_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20365",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_slave_colonies",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20366",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_society_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20367",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_society_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20368",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_society_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20369",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_space_defense_station_improvement",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20370",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_space_mining_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20371",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_space_mining_2",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20372",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_space_mining_3",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20373",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_space_mining_4",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20374",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_space_mining_5",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20375",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_space_science_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20376",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_space_science_2",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20377",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_space_science_3",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20378",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_space_science_4",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20379",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_space_science_5",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20380",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_space_trading",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20381",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_starbase_3",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20382",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_starbase_4",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20383",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_starbase_5",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20384",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_starfire_cannon",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20385",
+      "source": "common/technology/00_phys_weapon_tech.txt"
+    },
+    {
+      "id": "tech_stinger_build_speed",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20386",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_stinger_growth_1",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20387",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_stinger_growth_2",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20388",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_stingers",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20389",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_storm_manipulation",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20390",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_storm_prediction_1",
+      "area": "physics",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20391",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_storm_prediction_2",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20392",
+      "source": "common/technology/00_cosmic_storm_tech.txt"
+    },
+    {
+      "id": "tech_strategic_coordination",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20393",
+      "source": "common/technology/00_megastructures.txt"
+    },
+    {
+      "id": "tech_strike_craft_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20394",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_strike_craft_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20395",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_strike_craft_3",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20396",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_subdermal_stimulation",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20397",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_swarmer_missiles_1",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20398",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_swarmer_missiles_2",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20399",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_synchronized_defences",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20400",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_synth_queen_knowledge",
+      "area": "physics",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20401",
+      "source": "common/technology/00_machine_age_tech.txt"
+    },
+    {
+      "id": "tech_synthetic_leaders",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20402",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_synthetic_thought_patterns",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20403",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_synthetic_workers",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20404",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_telepathy",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20405",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_terrestrial_sculpting",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20406",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_thought_enforcement",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20407",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_thrusters_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20408",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_thrusters_3",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20409",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_thrusters_4",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20410",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_titan_hull_1",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20411",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_titan_hull_2",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20412",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_titans",
+      "area": "engineering",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20413",
+      "source": "common/technology/00_eng_tech.txt"
+    },
+    {
+      "id": "tech_tomb_world_adaption",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20414",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_torpedoes_1",
+      "area": "engineering",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20415",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_torpedoes_2",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20416",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_torpedoes_3",
+      "area": "engineering",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20417",
+      "source": "common/technology/00_eng_weapon_tech.txt"
+    },
+    {
+      "id": "tech_toxic_kelp",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20418",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_tracking_implants",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20419",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_transcendent_faith",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20420",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_unity_of_purpose",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20421",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_vitality_boosters",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20422",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_volatile_motes",
+      "area": "physics",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20423",
+      "source": "common/technology/00_strategic_resources_tech.txt"
+    },
+    {
+      "id": "tech_volcanic_forge",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20424",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_volcanic_terraforming",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20425",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_volcano",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20426",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_waystation_2",
+      "area": "engineering",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20427",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_waystation_3",
+      "area": "engineering",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20428",
+      "source": "common/technology/00_nomads_dlc_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_evasion_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20429",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_evasion_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20430",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_evasion_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20431",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_evasion_5",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20432",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_fire_rate_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20433",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_fire_rate_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20434",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_fire_rate_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20435",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_fire_rate_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20436",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_anti_fire_rate_5",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20437",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_confuser_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20438",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_confuser_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20439",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_confuser_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20440",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_confuser_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20441",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_confuser_5",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20442",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_evasion_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20443",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_evasion_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20444",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_evasion_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20445",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_evasion_5",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20446",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_fire_rate_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20447",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_fire_rate_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20448",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_fire_rate_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20449",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_fire_rate_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20450",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_fire_rate_5",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20451",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_healing_1",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20452",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_healing_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20453",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_healing_3",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20454",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_healing_4",
+      "area": "society",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20455",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_bio_healing_5",
+      "area": "society",
+      "tier": 5,
+      "offer_event": "gft_tech_trade.20456",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_build_speed",
+      "area": "society",
+      "tier": 1,
+      "offer_event": "gft_tech_trade.20457",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_growth_1",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20458",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_weaver_growth_2",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20459",
+      "source": "common/technology/00_biogenesis_tech.txt"
+    },
+    {
+      "id": "tech_wilderness_cluster",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20460",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_wilderness_confluence",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20461",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_wormhole_stabilization",
+      "area": "physics",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20462",
+      "source": "common/technology/00_phys_tech.txt"
+    },
+    {
+      "id": "tech_xeno_diplomacy",
+      "area": "society",
+      "tier": 2,
+      "offer_event": "gft_tech_trade.20463",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_xeno_relations",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20464",
+      "source": "common/technology/00_soc_tech.txt"
+    },
+    {
+      "id": "tech_xeno_tourism_agency",
+      "area": "society",
+      "tier": 3,
+      "offer_event": "gft_tech_trade.20465",
+      "source": "common/technology/00_megacorp_tech.txt"
+    },
+    {
+      "id": "tech_zero_point_power",
+      "area": "physics",
+      "tier": 4,
+      "offer_event": "gft_tech_trade.20466",
+      "source": "common/technology/00_phys_tech.txt"
+    }
+  ],
+  "excluded": {
+    "tech_secrets_cybrex": "event/special technology (base weight 0)",
+    "tech_secrets_league": "event/special technology (base weight 0)",
+    "tech_secrets_irassian": "event/special technology (base weight 0)",
+    "tech_secrets_vultaum": "event/special technology (base weight 0)",
+    "tech_secrets_yuht": "event/special technology (base weight 0)",
+    "tech_secrets_baol": "event/special technology (base weight 0)",
+    "tech_secrets_zroni": "event/special technology (base weight 0)",
+    "tech_colossus": "event/special technology (base weight 0)",
+    "tech_rift_sphere": "event/special technology (base weight 0)",
+    "tech_maulers": "starting technology",
+    "tech_weavers": "starting technology",
+    "tech_weaver_bio_healing_6": "outside areas/tier 1-5",
+    "tech_weaver_bio_evasion_1": "starting technology",
+    "tech_weaver_bio_evasion_6": "outside areas/tier 1-5",
+    "tech_weaver_bio_fire_rate_6": "outside areas/tier 1-5",
+    "tech_weaver_bio_confuser_6": "outside areas/tier 1-5",
+    "tech_weaver_bio_anti_evasion_1": "starting technology",
+    "tech_weaver_bio_anti_evasion_6": "outside areas/tier 1-5",
+    "tech_weaver_bio_anti_fire_rate_6": "outside areas/tier 1-5",
+    "tech_wilderness_terraform": "outside areas/tier 1-5",
+    "tech_gargantuan_evolution": "event/special technology (base weight 0)",
+    "tech_lgate_activation": "event/special technology (base weight 0)",
+    "tech_repeatable_lcluster_clue": "repeatable",
+    "tech_neuroregeneration": "event/special technology (base weight 0)",
+    "tech_solar_panel_network": "outside areas/tier 1-5",
+    "tech_corvettes": "outside areas/tier 1-5",
+    "tech_starbase_1": "outside areas/tier 1-5",
+    "tech_starbase_2": "outside areas/tier 1-5",
+    "tech_strike_craft_skrand": "event/special technology (base weight 0)",
+    "tech_assault_armies": "outside areas/tier 1-5",
+    "tech_ship_armor_1": "outside areas/tier 1-5",
+    "tech_crystal_armor_1": "event/special technology (base weight 0)",
+    "tech_crystal_armor_2": "event/special technology (base weight 0)",
+    "tech_thrusters_1": "outside areas/tier 1-5",
+    "tech_space_defense_station_1": "outside areas/tier 1-5",
+    "tech_basic_industry": "outside areas/tier 1-5",
+    "tech_mechanized_mining": "outside areas/tier 1-5",
+    "tech_space_construction": "outside areas/tier 1-5",
+    "tech_repeatable_improved_tile_mineral_output": "outside areas/tier 1-5",
+    "tech_repeatable_improved_military_station_damage": "outside areas/tier 1-5",
+    "tech_repeatable_improved_military_station_health": "outside areas/tier 1-5",
+    "tech_repeatable_improved_armor_output": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_explosive_damage": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_explosive_fire_rate": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_kinetic_damage": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_kinetic_fire_rate": "outside areas/tier 1-5",
+    "tech_repeatable_reduced_building_time": "outside areas/tier 1-5",
+    "tech_mass_drivers_1": "outside areas/tier 1-5",
+    "tech_flak_batteries_1": "outside areas/tier 1-5",
+    "tech_missiles_1": "outside areas/tier 1-5",
+    "tech_pyroclastic_resonation": "event/special technology (base weight 0)",
+    "tech_alloy_fossilization": "event/special technology (base weight 0)",
+    "tech_orbital_maneuvers": "event/special technology (base weight 0)",
+    "tech_cryovault": "event/special technology (base weight 0)",
+    "tech_living_test_subjects": "event/special technology (base weight 0)",
+    "tech_georadiation_terraforming": "event/special technology (base weight 0)",
+    "tech_dark_matter_deflector": "outside areas/tier 1-5",
+    "tech_dark_matter_power_core": "outside areas/tier 1-5",
+    "tech_dark_matter_propulsion": "outside areas/tier 1-5",
+    "tech_fe_affluence_1": "outside areas/tier 1-5",
+    "tech_fe_affluence_2": "outside areas/tier 1-5",
+    "tech_fe_nourishment_1": "outside areas/tier 1-5",
+    "tech_fe_nourishment_2": "outside areas/tier 1-5",
+    "tech_fe_fabricator_1": "outside areas/tier 1-5",
+    "tech_fe_fabricator_2": "outside areas/tier 1-5",
+    "tech_fe_singularity_1": "outside areas/tier 1-5",
+    "tech_fe_singularity_2": "outside areas/tier 1-5",
+    "tech_fe_forge_1": "outside areas/tier 1-5",
+    "tech_fe_forge_2": "outside areas/tier 1-5",
+    "tech_fe_dome_1": "outside areas/tier 1-5",
+    "tech_fe_dome_2": "outside areas/tier 1-5",
+    "tech_fe_fortress_1": "outside areas/tier 1-5",
+    "tech_fe_fortress_2": "outside areas/tier 1-5",
+    "tech_fe_administration_1": "outside areas/tier 1-5",
+    "tech_fe_administration_2": "outside areas/tier 1-5",
+    "tech_fe_assembly_1": "outside areas/tier 1-5",
+    "tech_fe_assembly_2": "outside areas/tier 1-5",
+    "tech_fe_clinic_1": "outside areas/tier 1-5",
+    "tech_fe_clinic_2": "outside areas/tier 1-5",
+    "tech_fe_security_1": "outside areas/tier 1-5",
+    "tech_fe_security_2": "outside areas/tier 1-5",
+    "tech_fe_market_1": "outside areas/tier 1-5",
+    "tech_fe_market_2": "outside areas/tier 1-5",
+    "tech_fe_silo_1": "outside areas/tier 1-5",
+    "tech_fe_silo_2": "outside areas/tier 1-5",
+    "tech_fe_entertainment_1": "outside areas/tier 1-5",
+    "tech_fe_entertainment_2": "outside areas/tier 1-5",
+    "tech_fe_lab_1": "outside areas/tier 1-5",
+    "tech_fe_lab_2": "outside areas/tier 1-5",
+    "tech_fe_mine_1": "outside areas/tier 1-5",
+    "tech_fe_mine_2": "outside areas/tier 1-5",
+    "tech_cloaking_dark_matter": "outside areas/tier 1-5",
+    "tech_subspace_drive": "outside areas/tier 1-5",
+    "tech_unusual_senses": "event/special technology (base weight 0)",
+    "tech_new_numbers": "event/special technology (base weight 0)",
+    "tech_trinary_computing": "event/special technology (base weight 0)",
+    "tech_atmospheric_orbital_mechanics": "event/special technology (base weight 0)",
+    "tech_predatory_tactics": "event/special technology (base weight 0)",
+    "tech_satisfying_insults": "event/special technology (base weight 0)",
+    "tech_compact_living": "event/special technology (base weight 0)",
+    "tech_alien_topography": "event/special technology (base weight 0)",
+    "tech_xeno_aesthetics": "event/special technology (base weight 0)",
+    "tech_lost_building_methods": "event/special technology (base weight 0)",
+    "tech_supreme_alloy": "event/special technology (base weight 0)",
+    "tech_ordered_retreat": "event/special technology (base weight 0)",
+    "tech_temple_of_transportation": "event/special technology (base weight 0)",
+    "tech_containment_vessel": "event/special technology (base weight 0)",
+    "tech_voidworm_immunity": "event/special technology (base weight 0)",
+    "tech_asteroidal_carapace": "event/special technology (base weight 0)",
+    "tech_boarding_cables": "event/special technology (base weight 0)",
+    "tech_unique_mutation_space_amoeba": "event/special technology (base weight 0)",
+    "tech_unique_mutation_tiyanki": "event/special technology (base weight 0)",
+    "tech_unique_mutation_voidworm": "event/special technology (base weight 0)",
+    "tech_unique_mutation_cutholoid": "event/special technology (base weight 0)",
+    "tech_unique_mutation_crystalline_entity": "event/special technology (base weight 0)",
+    "tech_unique_mutation_restorative_enzymes": "event/special technology (base weight 0)",
+    "tech_unique_mutation_starborne_biology": "event/special technology (base weight 0)",
+    "tech_thrusters_bio_integration": "event/special technology (base weight 0)",
+    "tech_hyper_drive_bio_integration": "event/special technology (base weight 0)",
+    "tech_sensors_bio_integration": "event/special technology (base weight 0)",
+    "tech_combat_computers_bio_integration": "event/special technology (base weight 0)",
+    "tech_akx_worm_1": "outside areas/tier 1-5",
+    "tech_akx_worm_2": "outside areas/tier 1-5",
+    "tech_akx_worm_3": "outside areas/tier 1-5",
+    "tech_dragon_armor": "outside areas/tier 1-5",
+    "tech_enigmatic_encoder": "outside areas/tier 1-5",
+    "tech_enigmatic_decoder": "outside areas/tier 1-5",
+    "tech_identity_copy": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_crisis_1": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_crisis_2": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_crisis_3": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_crisis_4": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_crisis_5": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_escort": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_battlecruiser": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_FE_titan": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_weaver": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_mauler": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_harbinger": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_stinger": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_world": "event/special technology (base weight 0)",
+    "tech_cosmogenesis_thesis": "repeatable",
+    "tech_orbital_arc_furnace": "event/special technology (base weight 0)",
+    "tech_dyson_swarm": "event/special technology (base weight 0)",
+    "tech_nanite_repair_system_synth_queen": "event/special technology (base weight 0)",
+    "tech_orbital_trash_dispersal": "event/special technology (base weight 0)",
+    "tech_nomads_mechanized_mining": "outside areas/tier 1-5",
+    "tech_waystation_1": "outside areas/tier 1-5",
+    "tech_dyson_gun": "event/special technology (base weight 0)",
+    "tech_space_exploration": "outside areas/tier 1-5",
+    "tech_basic_science_lab_1": "outside areas/tier 1-5",
+    "tech_fission_power": "outside areas/tier 1-5",
+    "tech_reactor_boosters_1": "outside areas/tier 1-5",
+    "tech_shields_1": "outside areas/tier 1-5",
+    "tech_power_plant_1": "outside areas/tier 1-5",
+    "tech_hyper_drive_1": "outside areas/tier 1-5",
+    "tech_repeatable_improved_tile_energy_output": "outside areas/tier 1-5",
+    "tech_repeatable_improved_shield_output": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_energy_damage": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_energy_fire_rate": "outside areas/tier 1-5",
+    "tech_repeatable_reduced_building_cost": "outside areas/tier 1-5",
+    "tech_lasers_1": "outside areas/tier 1-5",
+    "tech_pd_tracking_1": "outside areas/tier 1-5",
+    "tech_extradimensional_weapon_1": "event/special technology (base weight 0)",
+    "tech_mining_drone_weapon_1": "event/special technology (base weight 0)",
+    "tech_space_cloud_weapon_1": "event/special technology (base weight 0)",
+    "tech_critter_feeder": "outside areas/tier 1-5",
+    "tech_psionic_aura": "event/special technology (base weight 0)",
+    "tech_aura_intensification": "event/special technology (base weight 0)",
+    "tech_aura_resonation": "event/special technology (base weight 0)",
+    "tech_materiality_engine": "event/special technology (base weight 0)",
+    "tech_psionic_bombers": "event/special technology (base weight 0)",
+    "tech_psionic_lightning": "event/special technology (base weight 0)",
+    "tech_psionic_disruptor": "event/special technology (base weight 0)",
+    "tech_zro_launcher": "event/special technology (base weight 0)",
+    "tech_planetary_defenses": "outside areas/tier 1-5",
+    "tech_interplanetary_commerce": "outside areas/tier 1-5",
+    "tech_prescient_data_modeling": "event/special technology (base weight 0)",
+    "tech_industrial_farming": "outside areas/tier 1-5",
+    "tech_hydroponics": "outside areas/tier 1-5",
+    "tech_colonization_1": "outside areas/tier 1-5",
+    "tech_basic_health": "outside areas/tier 1-5",
+    "tech_psi_jump_drive_1": "event/special technology (base weight 0)",
+    "tech_planetary_government": "outside areas/tier 1-5",
+    "tech_holo_entertainment": "outside areas/tier 1-5",
+    "tech_hive_node": "outside areas/tier 1-5",
+    "tech_wilderness_node": "outside areas/tier 1-5",
+    "tech_psionic_barrier": "event/special technology (base weight 0)",
+    "tech_psionic_shield": "event/special technology (base weight 0)",
+    "tech_covenant_composer": "outside areas/tier 1-5",
+    "tech_covenant_eater": "outside areas/tier 1-5",
+    "tech_covenant_instrument": "outside areas/tier 1-5",
+    "tech_covenant_cradle": "outside areas/tier 1-5",
+    "tech_covenant_whisperers": "outside areas/tier 1-5",
+    "tech_xeno_linguistics": "event/special technology (base weight 0)",
+    "tech_repeatable_improved_tile_food_output": "outside areas/tier 1-5",
+    "tech_repeatable_improved_core_system_cap": "outside areas/tier 1-5",
+    "tech_repeatable_improved_army_damage": "outside areas/tier 1-5",
+    "tech_repeatable_improved_army_health": "outside areas/tier 1-5",
+    "tech_repeatable_improved_leader_life_span": "outside areas/tier 1-5",
+    "tech_repeatable_naval_cap": "outside areas/tier 1-5",
+    "tech_repeatable_command_limit": "outside areas/tier 1-5",
+    "tech_repeatable_improved_starbase_capacity": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_strike_craft_fire_damage": "outside areas/tier 1-5",
+    "tech_repeatable_weapon_type_strike_craft_fire_rate": "outside areas/tier 1-5",
+    "tech_amoeba_strike_craft_1": "event/special technology (base weight 0)",
+    "tech_swarm_strike_craft_1": "event/special technology (base weight 0)",
+    "tech_scourge_missile_1": "event/special technology (base weight 0)",
+    "tech_space_whale_weapon_1": "event/special technology (base weight 0)",
+    "tech_enhanced_cryosleep_sedatives": "event/special technology (base weight 0)",
+    "tech_universal_marcophage": "event/special technology (base weight 0)"
+  }
+}

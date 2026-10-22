@@ -1,8 +1,8 @@
-version="2.0.1"
+version="3.0.0-beta.1"
 tags={
 	"Economy"
 }
 picture="thumbnail.png"
 name="Give Technology & Fleets"
-supported_version="3.7.*"
+supported_version="4.5.2"
 remote_file_id="2820825835"
